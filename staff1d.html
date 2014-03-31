@@ -1,0 +1,848 @@
+<!doctype html>
+<html>
+
+<!--CODE BY JAMIE MARRIOTT-->
+
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width">
+<meta name="viewport" content="initial-scale=1">
+<title>Plymouth University</title>
+<script type="text/javascript" src="./scripts/css3-mediaqueries.js"></script>
+<style type="text/css">
+#style1 {
+	background-color: #F0F;
+}
+#style1 .container-a {
+	background-color: #F00;
+	border: 1px solid #fff;
+}
+#style1 .container-full {
+	border: 1px solid #000;
+}
+#style2, #style2 .container-a, #style2 .container-b, #style2 .container-c, #style2 .container-d, #style2 .container-e {
+	background-color: #fff;
+}
+#style2 .black {
+	background-color: #282828 !important;
+	color: #fff;
+	overflow: hidden;
+}
+#style2 .grey {
+	background-color: #efefef !important;
+	overflow: hidden;
+}
+#style2 .darkgrey {
+	background-color: #ccc !important;
+	overflow: hidden;
+}
+#style2 .white {
+	background-color: #fff !important;
+	color: #000;
+	overflow: hidden;
+}
+* {
+	margin: 0 auto;
+}
+@font-face {
+	font-family: 'icon-webfont';
+	src: url('fonts/icon-webfont.eot');
+	src: url('fonts/icon-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/icon-webfont.woff') format('woff'), url('fonts/icon-webfont.ttf') format('truetype'), url('fonts/icon-webfont.svg#source-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit';
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot');
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot?#iefix') format('embedded-opentype'), url('fonts/NeuzeitforPlymouthW04-Blk.woff') format('woff'), url('fonts/NeuzeitforPlymouthW04-Blk.ttf') format('truetype'), url('fonts/NeuzeitforPlymouthW04-Blk.svg#neuzit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-light';
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-light-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-light-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-light-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-regular';
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-regular-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-regular-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-regular-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-bold';
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-bold-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-bold-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-bold-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-italic';
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-italic-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-italic-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-italic-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, form, fieldset, p, div, h2, h3, h3, h4, h5, h6 {
+	-webkit-text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1";
+	-ms-font-feature-settings: "kern" 1;
+}
+body {
+	font-family: 'neuzeit-regular', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+}
+table {
+	float: left;
+	margin: 12px;
+}
+p, h1, h2, h3 {
+	padding: 0;
+	margin: 12px;
+	font-weight: normal;
+}
+h2 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: normal;
+}
+h3 {
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+}
+strong {
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+a {
+	color: #08c;
+}
+img {
+	border: 0;
+	text-decoration: none;
+	vertical-align: top;
+}
+.icon {
+	font-family: 'icon-webfont', Arial, Helvetica, sans-serif;
+	display: inline;
+	font-size: 20px;
+	line-height: 18px;
+}
+.icon:before {
+	content: attr(data-icon);
+}
+.hor-zebra {
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #000;
+	margin-bottom: 24px;
+	clear: both;
+	float: left;
+}
+.hor-zebra th {
+	padding: 6px;
+	border: 1px solid #000;
+}
+.hor-zebra td {
+	padding: 6px;
+	border: 1px solid #000;
+}
+.hor-zebra .odd {
+	background: #ccc;
+}
+.hor-zebra .blacktitle {
+	background: #000;
+	color: #fff;
+}
+.bbot {
+	padding-bottom: 12px;
+	border-bottom: 1px solid #ccc;
+}
+.container-b, .container-c, .container-d {
+	float: left;
+}
+.container-full {
+	width: 100%;
+	float: left;
+}
+.container-a {
+	overflow: hidden;
+	position: relative;
+}
+.container-b {
+	background-color: #F90;
+}
+.container-c {
+	background-color: #FF0;
+}
+.container-d {
+	background-color: #0F0;
+}
+.container-e {
+	background-color: #0FF;
+}
+ul {
+	padding: 12px 12px 12px 32px;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.nav li {
+	display: inline;
+	padding: 12px;
+	float: left;
+	margin-right: 24px;
+}
+.nav li, .nav li a {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+.floatl {
+	float: left;
+}
+.floatr {
+	float: right;
+}
+.textr {
+	text-align: right;
+}
+.hero {
+	float: left;
+	width: 100%;
+	background-width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.hero a, .boxb a {
+	color: #fff;
+}
+.hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6, .hero p, .hero strong, .hero em {
+	color: #fff;
+}
+.tinttl {
+	background-image: url(images/666.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+}
+.tinttr {
+	background-image: url(images/666.png);
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: left;
+}
+.tintbl {
+	background-image: url(images/666.png);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	float: left;
+}
+.tintbr {
+	background-image: url(images/666.png);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	float: left;
+}
+.full {
+	width: 100%;
+}
+.max300 {
+	max-width: 300px;
+}
+.floatlimage {
+	float: left;
+	padding: 0 12px 0 0;
+}
+.picola {
+	color: #3CBEB4;
+}
+.picolb {
+	color: #58595B;
+}
+.padding12 {
+	padding: 12px;
+}
+.padtop6 {
+	padding-top: 6px;
+}
+.dblock {
+	display: block;
+}
+.footerlist li a {
+	padding: 12px 12px 11px 12px;
+	display: block;
+	border-bottom: 1px solid #444;
+	margin-right: 24px;
+	text-decoration: none;
+	color: #fff;
+}
+.footerlist li a:hover {
+	text-decoration: underline;
+}
+ul.footerlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.facebook {
+	font-size: 24px;
+	text-decoration: none;
+	color: #0C6;
+	padding: 12px;
+}
+.facebook, .twitter, .google, .youtube, .instagram, .linkedin, .pinterest {
+	font-size: 20px;
+	text-decoration: none;
+	padding: 12px;
+}
+.facebook {
+	color: #3b5998;
+}
+.twitter {
+	color: #55acee;
+}
+.google {
+	color: #db4437;
+}
+.youtube {
+	color: #c4302b;
+}
+.instagram {
+	color: #3f729b;
+}
+.linkedin {
+	color: #0e76a8;
+}
+.pinterest {
+	color: #c8232c;
+}
+.bordertop {
+	border-top: 10px solid #ccc;
+	margin-top: 20px;
+}
+.tabnav a {
+	text-decoration: none;
+	color: #08c;
+	font-weight: normal;
+}
+.menuitem {
+	background-color: #ddd;
+	margin-bottom: 1px;
+	width: 100%;
+	display: block;
+}
+.menuitem a {
+	display: block;
+	padding: 12px 6px;
+	color: #08c;
+	text-decoration: none;
+}
+.accordion {
+	float: left;
+	width: 100%;
+}
+.accordion p {
+	margin: 10px;
+}
+.tabnav {
+	float: left;
+	width: 100%;
+	background-color: #ccc;
+}
+.tabnav ul {
+	padding: 0;
+	margin: 12px 0 0 0;
+}
+.tabnav li {
+	list-style: none;
+	float: left;
+	margin: 0 6px 0 0;
+	background-image: url(none);
+	padding: 0;
+}
+.tabnav li a {
+	border: 0;
+	padding: 6px;
+	display: block;
+}
+#section1 {
+	display: block;
+}
+#section2, #section3, #section4, #section5 {
+	display: none;
+}
+#navtab1 {
+	background-color: #fff;
+}
+#navtab2, #navtab3, #navtab4, #navtab5 {
+	background-color: #ddd;
+}
+ @media screen and (max-width: 639px) {
+.tabnav {
+	display: none;
+}
+.menuitem {
+	display: block;
+}
+}
+ @media screen and (min-width: 640px) {
+.tabnav {
+	display: block;
+}
+.menuitem {
+	display: none;
+}
+}
+ @media screen and (max-width: 639px) {
+.container-a {
+	min-width: 320px;
+}
+.container-b, .container-c, .container-d, .container-e {
+	min-width: 100%;
+}
+.nav {
+	display: none;
+}
+.desktop {
+	display: none;
+}
+.tinttl, .tinttr, .tintbl, .tintbr {
+	position: relative;
+	width: 100%;
+	background-color: #282828;
+}
+.hero h1 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: none;
+	font-weight: normal;
+}
+.footerlist li a {
+	margin-right: 0;
+}
+.clearboth {
+	clear: both;
+}
+}
+ @media screen and (min-width: 640px) and (max-width: 939px) {
+.container-b {
+	width: 49.9%;
+	float: left;
+}
+.container-c {
+	width: 49.9%;
+	float: left;
+}
+.container-d {
+	width: 49.9%;
+}
+.container-e {
+	width: 66.9%;
+}
+.mobile {
+	display: none;
+}
+.tinttl, .tinttr, .tintbl, .tintbr {
+	max-width: 49.9%;
+}
+.hero h1 {
+	font-family: 'neuzeit', Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+}
+ @media screen and (min-width: 940px) {
+.container-a {
+	max-width: 940px;
+}
+.container-b {
+	width: 66.9%;
+}
+.container-c {
+	width: 33%;
+}
+.container-d {
+	width: 49.9%;
+}
+.container-e {
+	width: 66.9%;
+	max-width: 640px;
+}
+.mobile {
+	display: none;
+}
+.tinttl, .tinttr, .tintbl, .tintbr {
+	max-width: 49.9%;
+}
+.hero h1 {
+	font-family: 'neuzeit', Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+}
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+function keyscroll(e){
+var evtobj=window.event? event : e
+var unicode=evtobj.charCode? evtobj.charCode : evtobj.keyCode
+var actualkey=String.fromCharCode(unicode)
+if (actualkey=="2") back1();
+if (actualkey=="1") back2();
+}
+
+document.onkeypress=keyscroll
+
+function back1(){
+document.getElementsByTagName('body')[0].id="style1"}
+
+function back2(){
+document.getElementsByTagName('body')[0].id="style2"}
+
+function closesections(){
+document.getElementById("section1").style.display="none"
+document.getElementById("section2").style.display="none"
+document.getElementById("section3").style.display="none"
+document.getElementById("section4").style.display="none"
+document.getElementById("section5").style.display="none"
+document.getElementById("arrow1").src = "images/plus.png";
+document.getElementById("arrow2").src = "images/plus.png";
+document.getElementById("arrow3").src = "images/plus.png";
+document.getElementById("arrow4").src = "images/plus.png";
+document.getElementById("arrow5").src = "images/plus.png";
+}
+
+function section1(){
+if (document.getElementById('section1').style.display == 'none') {
+closesections();
+color('navtab1','tabs');
+setTimeout('document.getElementById("section1").style.display="block"; document.getElementById("arrow1").src = "images/minus.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section2(){
+if (document.getElementById('section2').style.display == 'none') {
+closesections();
+color('navtab2','tabs');
+setTimeout('document.getElementById("section2").style.display="block"; document.getElementById("arrow2").src = "images/minus.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section3(){
+if (document.getElementById('section3').style.display == 'none') {
+closesections();
+color('navtab3','tabs');
+setTimeout('document.getElementById("section3").style.display="block"; document.getElementById("arrow3").src = "images/minus.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section4(){
+if (document.getElementById('section4').style.display == 'none') {
+closesections();
+color('navtab4','tabs');
+setTimeout('document.getElementById("section4").style.display="block"; document.getElementById("arrow4").src = "images/minus.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section5(){
+if (document.getElementById('section5').style.display == 'none') {
+closesections();
+color('navtab5','tabs');
+setTimeout('document.getElementById("section5").style.display="block"; document.getElementById("arrow5").src = "images/minus.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function navsection1(){
+closesections();
+document.getElementById("section1").style.display="block";
+document.getElementById("arrow1").src = "images/minus.png";
+}
+
+function navsection2(){
+closesections();
+document.getElementById("section2").style.display="block";
+document.getElementById("arrow2").src = "images/minus.png";
+}
+
+function navsection3(){
+closesections();
+document.getElementById("section3").style.display="block";
+document.getElementById("arrow3").src = "images/minus.png";
+}
+
+function navsection4(){
+closesections();
+document.getElementById("section4").style.display="block";
+document.getElementById("arrow4").src = "images/minus.png";
+}
+
+function navsection5(){
+closesections();
+document.getElementById("section5").style.display="block";
+document.getElementById("arrow5").src = "images/minus.png";
+}
+
+function color(id, sample){
+var tog = document.getElementsByTagName('li');
+for(var v = 0; v < tog.length; v++){
+if(tog[v].className == sample){
+tog[v].style.backgroundColor = "#dddddd";
+}
+}
+document.getElementById(id).style.backgroundColor = "#ffffff";
+}
+
+
+/* ]]> */
+</script>
+</head>
+
+<body id="style2"">
+<div class="container-full">
+  <div class="container-a">
+    <p class="floatr"><img src="images/search-box.gif" width="123" height="19" alt="" class="desktop"> <img src="images/magnify2.gif" alt="" width="48" height="16"></p>
+    <p><img src="images/succeed-with-100.gif" width="171" height="100" alt=""></p>
+  </div>
+</div>
+<div class="container-full black">
+  <div class="container-a black">
+    <p class="mobile"><img src="images/burger.png" width="16" height="16" alt=""></p>
+    <ul class="nav">
+      <li>Courses <img src="images/arrow-down.png" width="16" height="16" alt=""></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Enterprise</a></li>
+      <li><a href="#">Our university</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container-full grey desktop">
+  <div class="container-a grey">
+    <p><a href="#">Plymouth University</a> > <a href="#">Staff directory</a></p>
+  </div>
+</div>
+<div class="container-full">
+  <div class="container-a">
+    <div class="hero"><img src="images/jonathan-ellis.jpg" class="full" alt="">
+      <div class="tinttl">
+        <h1>Staff profile</h1>
+        <h3>Dr Jonathan Ellis</h3>
+        <p>Job title: Lecturer in Environmental Science, School of Geography, Earth and Environmental Sciences (Faculty of Science & Environment)</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-full darkgrey">
+  <div class="container-a">
+    <p><span class="icon">U </span>Room 101, Fitzroy, Drake Circus,
+      Plymouth, Devon, PL4 8AA<br>
+      <span class="icon">0 </span><a href="#">+441752585946</a><br>
+      <span class="icon">Z </span><a href="#">jonanthan.ellis@plymouth.ac.uk</a></p>
+  </div>
+</div>
+<div class="container-full darkgrey">
+  <div class="container-a">
+    <div class="tabnav">
+      <ul>
+        <li id="navtab1" class="tabs"><a href="javascript:navsection1(); color('navtab1','tabs');">Biography</a></li>
+        <li id="navtab2" class="tabs"><a href="javascript:navsection2(); color('navtab2','tabs');">Teaching</a></li>
+        <li id="navtab3" class="tabs"><a href="javascript:navsection3(); color('navtab3','tabs');">Research</a></li>
+        <li id="navtab4" class="tabs"><a href="javascript:navsection4(); color('navtab4','tabs');">Publications</a></li>
+        <li id="navtab5" class="tabs"><a href="javascript:navsection5(); color('navtab5','tabs');">Personal</a></li>
+      </ul>
+    </div>
+    <div class="accordion">
+      <div class="menuitem"><a href='javascript:section1()'><img src="images/plus.png" alt="triangle" width="16" height="16" id="arrow1" /> Biography</a></div>
+      <div id="section1" class="toggle">
+        <h2>Role</h2>
+        <p>Lecturer in Environmental Science, Applied Ecology</p>
+         
+        <h2>Qualifications & background</h2>
+        <ul>
+          <li><strong>2013</strong> Lecturer in Environmental Science, Plymouth University</li>
+          <li><strong>2011 - 2013</strong> Lecturer in Molecular Conservation Biology, MMU</li>
+          <li><strong>2010 - 2011</strong> Postdoctoral Research Fellow, Plymouth University</li>
+          <li><strong>2008 - 2010</strong> Associate Research Fellow, Exeter University</li>
+          <li><strong>Autumn 2008</strong> Experiential Learning Development Project, Plymouth University</li>
+          <li><strong>November 2006 - December 2007</strong> Post-doctoral Research Fellow, Plymouth University</li>
+          <li><strong>2002 - 2005</strong> PhD. Population genetics and ecology of rare bumblebees in the UK</li>
+          <li><strong>1999 - 2002</strong> BSc. (Hons) Zoology with Animal Ecology, University of Wales, Bangor</li>
+        </ul>
+      </div>
+      <div class="menuitem"><a href='javascript:section2()'><img src="images/plus.png" alt="triangle" width="16" height="16" id="arrow2" /> Teaching</a></div>
+      <div id="section2" class="toggle">
+        <h2>Teaching interests</h2>
+        <ul>
+          <li>Conservation biology and conservation genetics</li>
+          <li>Molecular ecology</li>
+          <li>Evolution &amp; biodiversity</li>
+          <li>Terrestrial invertebrate ecology, esp. insects and moss invertebrates</li>
+        </ul>
+        <h2>I teach on the modules:</h2>
+        <ul>
+          <li>ENVS 104 - The Biosphere</li>
+          <li>ENVS 207- Natural Ecosystems</li>
+          <li>ENVS 304 - Contemporary Issues</li>
+          <li>ENVS 309 - Biodiversity management in tropical ecosystems</li>
+        </ul>
+        <p>I also teach on field courses in the UK (Slapton) and abroad (Malaysia) as well as supervising undergraduate and postgraduate research projects.</p>
+      </div>
+      <div class="menuitem"><a href='javascript:section3()'><img src="images/plus.png" alt="triangle" width="16" height="16" id="arrow3" /> Research</a></div>
+      <div id="section3" class="toggle">
+        <h2>Research interests</h2>
+        <p>I am interested in the use of molecular tools to understand processes that maintain and erode genetic diversity in natural populations. I am also interested in the application of these tools to solve ecological problems of importance for conservation and management.</p>
+        <p>My previous research has involved assessing genetic diversity, gene-flow and population structure in declining populations of bumblebee species. I have also developed molecular tools to identify cryptic species of bumblebee and to identify wireworms (which are significant agricultural pests of potato). In addition to work on insects, I have also been involved in a large-scale research project to help understand the marine ecology of Atlantic salmon (the ‘SALSEA-Merge’ project).</p>
+        <p>More recently, I have become interested in the nature of the relationship between estimates of genetic diversity based on neutral markers and those based on functional regions: it is important to understand how adaptively important genetic variation is affected by the forces known to shape neutral genetic variation and the consequences for conservation. Recent work has focussed on identifying patterns of selection at potential candidate loci involved in immunity and metabolism in bumblebees within this context.</p>
+        <p><strong>Current projects include:</strong></p>
+        <ul>
+          <li>Conservation genetics of the Hazel dormouse with Dr Ed Harris and Fraser Combe (MMU PhD student)</li>
+          <li>Adaptive conservation genetics of Bombus terrestris with Dr Mairi Knight (Plymouth University) and Prof. Dave Goulson (University of Stirling)</li>
+          <li>Adaptive conservation genomics of European Grayling with Dr Martin Taylor (UEA), Dr Robin Sen (MMU) and the Grayling Research Trust.</li>
+        </ul>
+        <p>The beauty of molecular tools is that they can be broadly applied across a wide range of taxa. If you have research interests on any group that you feel match my interests I am very happy to discuss potential PhD studentship applications, post-doctoral research or other collaborations.</p>
+        <h2>Current Research Group</h2>
+        <p><strong>Vanessa Huml, PhD student</strong></p>
+        <p>Vanessa is funded by Manchester Metropolitan University (where I used to work) and the Grayling Research Trust, but is based in Plymouth. She is examining genetic diversity of MHC loci in  European grayling (Thymallus thymallus) in relation to bacterial and environmental parameters as well as in contrast to neutral variation, using next-generation sequencing approaches (Ion Torrent). Collaborating on the project are Dr Ed Harris and Dr Robin Sen (MMU), Dr Martin Taylor (UEA), Richard Cove (Natural Resources Wales). Dr Steven Weiss is an external advisor.</p>
+        <p><a href="#">http://www.sste.mmu.ac.uk/research_students/staffbiog/default.asp?StaffID=1013</a></p>
+        <p><strong>Kirsty Lloyd, PhD student</strong></p>
+        <p>I co-supervise Kirsty with Dr Mairi Knight (Plymouth Uniiversity, DoS), Dr Mark Brown (Royal Holloway) and Prof Dave Goulson (Sussex). Kirsty is examining the population genetics of the colonisation and
+        <p>subsequent expansion of Bombus hypnorum in the UK.</p>
+        <p><a href="#">http://www.plymouth.ac.uk/staff/klloyd1</a></p>
+        <p><strong>Sarah Rustage, PhD student</strong></p>
+        <p>I co-supervise Sarah with Dr Mairi Knight (Plymouth Unversity, DoS) and Dr Mark Brown (Royal Holloway). Sarah is near the end of her PhD examining genetic diversity and fitness (parasite load and immunocompetence) in Bombus monticola (in contrast to the closely related but widespread B. pratorum).</p>
+        <p><a href="http://www.plymouth.ac.uk/staff/srustage#" target="#">http://www.plymouth.ac.uk/staff/srustage#</a></p>
+        <p><strong>Fraser Combe, PhD student</strong></p>
+        <p>Fraser is studying for his PhD at Manchester Metropolitan under Dr Ed Harris (DoS). Fraser is examining landscape and conservation genetics of the hazel dormouse (Muscardinus avellanarius) in the UK. He works closely with a number of wildlife trusts, but particularly with Dr Simone Bullion at Suffolk Wildlife Trust.</p>
+        <p><a href="#">http://www.sste.mmu.ac.uk/research_students/staffbiog/default.asp?StaffID=1003</a></p>
+        <h2>Grants &amp; contracts</h2>
+        <p><strong>2013</strong></p>
+        <p>Internal faculty-wide PhD studentship competition MMU, plus £10,000 Grayling Research Trust. ‘Assessing adaptive genetic variation for effective conservation and management of European Grayling’.</p>
+        <p>£4870 Research accelerator grant. ‘Adaptive conservation genomics of an important insect pollinator’. Internal grant competition MMU.</p>
+        <p><strong>2012</strong></p>
+        <p>£1080 Society of Biology, Undergraduate Research Bursary. Identifying evolutionary significant units in the hazel dormouse.</p>
+        <p><strong>2010</strong></p>
+        <p>NERC quota studentship. ‘Neutral and functional genetic variation, parasite load and immunocompetence in social insects’. Co-applicant with Dr. Mairi Knight on a successful bid for an internal PhD studentship, Plymouth University.</p>
+        <p><strong>2008</strong></p>
+        <p>£72990 Leverhulme trust, ‘Neutral versus functional genetic diversity: a new conservation genetic agenda’  (P.I. Dr Mairi Knight, University of Plymouth; named researcher, Jonathan Ellis).</p>
+        <p><strong>2007</strong></p>
+        <p>£6340 Seale-Hayne Educational Trust ‘Development of molecular techniques to further understanding of wireworm ecology’ (with Prof. Rod Blackshaw).</p>
+        <p><strong>2005</strong></p>
+        <p>£300 Genetics Society travel grant (conference attendance).</p>
+      </div>
+      <div class="menuitem"><a href='javascript:section4()'><img src="images/plus.png" alt="triangle" width="16" height="16" id="arrow4" /> Publications</a></div>
+      <div id="section4" class="toggle">
+        <h2>Publications</h2>
+        <p>Ellis, J.S., Turner, L.M, Knight, M.E. Lack of variation at phosphoglucose isomerase (Pgi) in bumblebees: implications for conservation genetics studies. PLoS One  8: e65600</p>
+        <p>Benefer , C.M., van Herk, WG, Ellis, JS, Blackshaw, RP, Vernon RS, Knight ME (2013) The molecular identification and genetic diversity of economically important wireworm species (Coleoptera: Elateridae) in Canada. Journal of Pest Science 86: 19-27</p>
+        <p>Cooper, E.M., Lunt, P.H., Ellis, J.S., & Knight, M.E. (online 2012) Biogeographical patterns of variation in western European populations of the Great Green Bush-cricket (Tettigonia viridissima; Orthoptera Tettigoniidae). Journal of Insect Conservation. DOI 10.1007/s10841-012-9525-9</p>
+        <p>Ellis, J.S, Turner, L.M., Knight, M.E. (2012) Patterns of selection and polymorphism of innate immunity genes in bumblebees (Hymenoptera: Apidae). Genetica 140: 205-217</p>
+        <p>Benefer, C., Knight, M.E., Ellis, J.S., Hicks, H., Blackshaw, R. (2012) Understanding the relationship between adult and larval Agriotes distributions: the effect of sampling method, species identification and abiotic variables Applied Soil Ecology 53: 39-48</p>
+        <p>Griffiths, A.M., Ellis, J.S., Clifton-Dey, D., Machado- Schiaffino, G., Bright, D., Garcia-Vazquez, E. & Stevens, J.R. (2011) Restoration versus recolonisation; the origin of Atlantic salmon (Salmo salar L.) currently in the River Thames. Biological Conservation 144: 2733-2738</p>
+        <p>Ellis J.S. , Gilbey J. , Armstrong A., Balstad T., Cauwelier C., Cherbonnel C., Consuegra S., Coughlan J., Cross T.F., Crozier W., Dillane E., Ensing D., García de Leániz C., García- Vázquez E., Griffiths A.M., Hindar K., Hjorleifsdottir S., Knox D., Machado-Schiaffino G., McGinnity P., Meldrup D., Nielsen E.E., Olafsson K., Primmer C.R., Prodohl P., Stradmeyer L., Vähä J-P., Verspoor E., Wennevik V. and Stevens J. R. (2011) Microsatellite standardization and genotyping error in a large multi-partner research programme for conservation of Atlantic salmon (Salmo salar L.) Genetica 139: 353-367</p>
+        <p>Ellis, J.S., Sumner, K., Bright, D. & Stevens, J.R.(2011) Population genetic structure of Atlantic salmon populations (Salmo salar L.) in the River Tamar catchment, UK. Fisheries Management and Ecology 18: 233-245</p>
+        <p>Benefer, C., Andrew, P., Blackshaw, R., Ellis, J. & Knight, M (2010). The spatial distribution of phytophagous insect larvae in grassland soils. Applied Soil Ecology 45: 269-274</p>
+        <p>Ellis, J.S., Blackshaw, R.P., Parker, W.E., Hicks, H. & Knight, M.E. (2009) Genetic identification of morphologically cryptic agricultural pests. Agricultural and Forest Entomology 11: 115-121</p>
+        <p>Ellis, J.S., Knight, M.E., Darvill, B., & Goulson, D. (2006b) Extremely low effective population sizes, genetic structuring and reduced genetic diversity in a threatened bumblebee species, Bombus sylvarum (Hymenoptera: Apidae). Molecular Ecology 15: 4375-4386</p>
+        <p>Goulson, D., Hanley, M.E., Darvill, B. & Ellis, J.S. (2006) Biotope associations and the decline of bumblebees (Bombus spp.). Journal of Insect Conservation 10: 95-103</p>
+        <p>Darvill B., Ellis, J.S., Lye, G.C. & Goulson, D. (2006) Population structure and inbreeding in a rare and declining bumblebee, Bombus muscorum, (Hymenoptera: Apidae). Molecular Ecology 15: 601-611</p>
+        <p>Ellis, J.S., Knight, M.E., Carvell, C. & Goulson, D. (2006) Cryptic species identification: a simple diagnostic tool for discriminating between two problematic bumblebee species. Molecular Ecology Notes 6: 540-542</p>
+        <p>Ellis, J.S., Knight, M.E. & Goulson, D. (2005) Delineating species for conservation using mitochondrial sequence data: the taxonomic status of two Bombus species (Hymenoptera: Apidae). Journal of Insect Conservation 9: 75-83</p>
+        <p>Peat, J., Darvill, B., Ellis, J. & Goulson, D. (2005) Effects of climate on intra- and inter-specific size variation in bumblebees. Functional Ecology 19: 145-151</p>
+        <p>Goulson, D., Hanley, M.E., Darvill, B., Ellis, J.S. & Knight, M.E. (2005) Causes of rarity in bumblebees. Biological Conservation 122: 1-8</p>
+        <p>Goulson, D., Darvill, B., Ellis, J.S., Knight, M.E. & Hanley, M.E. (2004) Interspecific differences in response to novel landmarks in bumblebees. Apidologie 35: 619-622</p>
+      </div>
+      <div class="menuitem"><a href='javascript:section5()'><img src="images/plus.png" alt="triangle" width="16" height="16" id="arrow5" /> Personal</a></div>
+      <div id="section5" class="toggle">
+        <h2>Additional information</h2>
+        <p>In my spare time I am a keen cyclist (roadie) and  used to compete at an amateur level on the local scene as part of Team Certini. I also enjoy mountaineering and reading.</p>
+        <h2>Links</h2>
+        <p>Bumblebee conservation trust</p>
+        <p><a href="#">http://www.bumblebeeconservation.org/</a></p>
+        <p>BWARS, the bees, wasps and ants recording society</p>
+        <p><a href="#">http://www.bwars.com/</a></p>
+        <p>SALSEA-Merge</p>
+        <p><a href="#">http://www.nasco.int/sas/salseamerge.htm</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-full"></div>
+<div class="container-full black">
+  <div class="container-a black">
+    <div class="container-c black">
+      <ul class="footerlist">
+        <li><a href="#">Courses &amp; study</a></li>
+        <li><a href="#">Student life</a></li>
+        <li><a href="#">International Plymouth</a></li>
+        <li><a href="#">Research &amp; expertise</a></li>
+        <li><a href="#">International students</a></li>
+        <li><a href="#">Business &amp; partners</a></li>
+        <li><a href="#">Your university</a></li>
+      </ul>
+    </div>
+    <div class="container-c black">
+      <p><strong>Plymouth University</strong><br>
+        Drake Circus<br>
+        Plymouth<br>
+        Devon<br>
+        PL4 8AA</p>
+      <ul class="footerlist">
+        <li><a href="#"><span class="icon">0 </span>+44 (0)1752 600600</a></li>
+        <li><a href="#"><span class="icon">U </span>Map &amp; directions</a></li>
+        <li><a href="#"><span class="icon">X </span>Visit us</a></li>
+      </ul>
+    </div>
+    <div class="container-c white padtop6 floatr">
+      <p class="icon"><a href="#" class="facebook">f</a><a href="#" class="twitter">t</a><a href="#" class="google">g</a><a href="#" class="youtube">y</a><a href="#" class="instagram">i</a><a href="#" class="linkedin">l</a><a href="#" class="pinterest">p</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

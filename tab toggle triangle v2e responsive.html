@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+
+<!--CODE BY JAMIE MARRIOTT-->
+
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width">
+<meta name="viewport" content="initial-scale=1">
+<title>Plymouth University</title>
+<script type="text/javascript" src="./scripts/css3-mediaqueries.js"></script>
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+@font-face {
+	font-family: 'icon-webfont';
+	src: url('fonts/icon-webfont.eot');
+	src: url('fonts/icon-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/icon-webfont.woff') format('woff'), url('fonts/icon-webfont.ttf') format('truetype'), url('fonts/icon-webfont.svg#source-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit';
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot');
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot?#iefix') format('embedded-opentype'), url('fonts/NeuzeitforPlymouthW04-Blk.woff') format('woff'), url('fonts/NeuzeitforPlymouthW04-Blk.ttf') format('truetype'), url('fonts/NeuzeitforPlymouthW04-Blk.svg#neuzit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-light';
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-light-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-light-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-light-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-regular';
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-regular-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-regular-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-regular-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-bold';
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-bold-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-bold-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-bold-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-italic';
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-italic-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-italic-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-italic-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, form, fieldset, p, div, h2, h3, h3, h4, h5, h6 {
+	-webkit-text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1";
+	-ms-font-feature-settings: "kern" 1;
+}
+body {
+	font-family: 'neuzeit-regular', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+}
+.nav a {
+	text-decoration: none;
+	color: #08c;
+	font-weight: normal;
+}
+.menuitem {
+	background-color: #282828;
+	margin-bottom: 1px;
+	width: 100%;
+	display: block;
+}
+.menuitem a {
+	display: block;
+	padding: 12px 6px;
+	color: #fff;
+	text-decoration: none;
+}
+.accordion {
+	float: left;
+	width: 100%;
+}
+.accordion p {
+	margin: 10px;
+}
+.nav {
+	float: left;
+	width: 100%;
+	background-color: #282828;
+}
+.nav ul {
+	padding: 0;
+	margin: 12px 0 0 0;
+}
+.nav li {
+	list-style: none;
+	float: left;
+	margin: 0 6px 0 0;
+	background-image: url(none);
+	padding: 0;
+}
+.nav li a {
+	border: 0;
+	padding: 12px;
+	display: block;
+}
+
+
+
+
+@media screen and (max-width: 639px) {
+.nav {
+	display: none;
+}
+.menuitem {
+	display: block;
+}
+}
+ @media screen and (min-width: 640px) {
+.nav {
+	display: block;
+}
+.menuitem {
+	display: none;
+}
+}
+
+
+
+
+
+-->
+/*]]>*/
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+function closesections(){
+document.getElementById("section1").style.display="none"
+document.getElementById("section2").style.display="none"
+document.getElementById("section3").style.display="none"
+document.getElementById("section4").style.display="none"
+document.getElementById("section5").style.display="none"
+document.getElementById("arrow1").src = "images/hide.png";
+document.getElementById("arrow2").src = "images/hide.png";
+document.getElementById("arrow3").src = "images/hide.png";
+document.getElementById("arrow4").src = "images/hide.png";
+document.getElementById("arrow5").src = "images/hide.png";
+}
+
+function section1(){
+if (document.getElementById('section1').style.display == 'none') {
+closesections();
+color('navtab1','tabs');
+setTimeout('document.getElementById("section1").style.display="block"; document.getElementById("arrow1").src = "images/show.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section2(){
+if (document.getElementById('section2').style.display == 'none') {
+closesections();
+color('navtab2','tabs');
+setTimeout('document.getElementById("section2").style.display="block"; document.getElementById("arrow2").src = "images/show.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section3(){
+if (document.getElementById('section3').style.display == 'none') {
+closesections();
+color('navtab3','tabs');
+setTimeout('document.getElementById("section3").style.display="block"; document.getElementById("arrow3").src = "images/show.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section4(){
+if (document.getElementById('section4').style.display == 'none') {
+closesections();
+color('navtab4','tabs');
+setTimeout('document.getElementById("section4").style.display="block"; document.getElementById("arrow4").src = "images/show.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function section5(){
+if (document.getElementById('section5').style.display == 'none') {
+closesections();
+color('navtab5','tabs');
+setTimeout('document.getElementById("section5").style.display="block"; document.getElementById("arrow5").src = "images/show.png" ',200);
+} else {
+closesections();
+color('','tabs');
+
+}
+}
+
+function navsection1(){
+closesections();
+document.getElementById("section1").style.display="block";
+document.getElementById("arrow1").src = "images/show.png";
+}
+
+function navsection2(){
+closesections();
+document.getElementById("section2").style.display="block";
+document.getElementById("arrow2").src = "images/show.png";
+}
+
+function navsection3(){
+closesections();
+document.getElementById("section3").style.display="block";
+document.getElementById("arrow3").src = "images/show.png";
+}
+
+function navsection4(){
+closesections();
+document.getElementById("section4").style.display="block";
+document.getElementById("arrow4").src = "images/show.png";
+}
+
+function navsection5(){
+closesections();
+document.getElementById("section5").style.display="block";
+document.getElementById("arrow5").src = "images/show.png";
+}
+
+
+
+
+function color(id, sample){
+var tog = document.getElementsByTagName('li');
+for(var v = 0; v < tog.length; v++){
+if(tog[v].className == sample){
+tog[v].style.backgroundColor = "#282828";
+}
+}
+document.getElementById(id).style.backgroundColor = "#fff";
+}
+
+
+
+
+
+
+
+/* ]]> */
+</script>
+</head>
+<body onload="document.getElementById('section1').style.display = 'block'; document.getElementById('section2').style.display = 'none'; document.getElementById('section3').style.display = 'none'; document.getElementById('section4').style.display = 'none'; document.getElementById('section5').style.display = 'none';
+navsection1();
+color('navtab1','tabs');">
+
+
+
+
+
+
+<div class="nav">
+    <ul>
+      <li id="navtab1" class="tabs"><a href="javascript:navsection1(); color('navtab1','tabs');">Biography</a></li>
+      <li id="navtab2" class="tabs"><a href="javascript:navsection2(); color('navtab2','tabs');">Teaching</a></li>
+      <li id="navtab3" class="tabs"><a href="javascript:navsection3(); color('navtab3','tabs');">Research</a></li>
+      <li id="navtab4" class="tabs"><a href="javascript:navsection4(); color('navtab4','tabs');">Publications</a></li>
+      <li id="navtab5" class="tabs"><a href="javascript:navsection5(); color('navtab5','tabs');">Personal</a></li>  
+    </ul>
+  </div>
+  
+  
+  <div class="accordion">
+  
+
+    <div class="menuitem"><a href='javascript:section1()'><img src="images/show.png" alt="triangle" width="11" height="11" id="arrow1" />Biography</a></div>
+  <div id="section1" class="toggle">
+       <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </div>
+  <div class="menuitem"><a href='javascript:section2()'><img src="images/hide.png" alt="triangle" width="11" height="11" id="arrow2" />Teaching</a></div>
+      <div id="section2" class="toggle">
+        <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+  <div class="menuitem"><a href='javascript:section3()'><img src="images/hide.png" alt="triangle" width="11" height="11" id="arrow3" />Research</a></div>
+      <div id="section3" class="toggle">
+        <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+  <div class="menuitem"><a href='javascript:section4()'><img src="images/hide.png" alt="triangle" width="11" height="11" id="arrow4" />Publications</a></div>
+      <div id="section4" class="toggle">
+        <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+  <div class="menuitem"><a href='javascript:section5()'><img src="images/hide.png" alt="triangle" width="11" height="11" id="arrow5" />Personal</a></div>
+      <div id="section5" class="toggle">
+        <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+</div>
+</body>
+</html>

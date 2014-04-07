@@ -203,6 +203,7 @@ ul.nav {
 	padding: 12px;
 	float: left;
 	margin-right: 24px;
+	line-height: 14px;
 }
 .nav li, .nav li a {
 	text-transform: uppercase;
@@ -283,6 +284,12 @@ ul.nav {
 }
 .padding12 {
 	padding: 12px;
+}
+.padr6 {
+	padding-right: 6px;
+}
+.padr12 {
+	padding-right: 12px;
 }
 .padtop6 {
 	padding-top: 6px;
@@ -433,12 +440,6 @@ ul.footerlist {
 .container-b, .container-c, .container-d, .container-e {
 	min-width: 100%;
 }
-.nav {
-	display: none;
-}
-.desktop {
-	display: none;
-}
 .tinttl, .tinttr, .tintbl, .tintbr {
 	position: relative;
 	width: 100%;
@@ -473,7 +474,7 @@ ul.footerlist {
 .container-e {
 	width: 66.9%;
 }
-.mobile {
+.tablet {
 	display: none;
 }
 .tinttl, .tinttr, .tintbl, .tintbr {
@@ -504,9 +505,6 @@ ul.footerlist {
 	width: 66.9%;
 	max-width: 640px;
 }
-.mobile {
-	display: none;
-}
 .tinttl, .tinttr, .tintbl, .tintbr {
 	max-width: 49.9%;
 }
@@ -518,6 +516,52 @@ ul.footerlist {
 	font-weight: normal;
 }
 }
+.nny, .nyy, .ynn, .yyn {
+	float: left;
+		 }
+ @media screen and (max-width: 639px) {
+.nny {
+	display: none;
+		 }
+.nyy {
+	display: none;
+		 }
+.ynn {
+	display: block;
+		 }
+.yyn {
+		 display: block;
+		 }
+ }
+ @media screen and (min-width: 640px) and (max-width: 939px) {
+ .nny {
+		 display: none;
+		 }
+.nyy {
+		 display: block;
+		 }
+.ynn {
+		 display: none;
+		 }
+.yyn {
+		 display: block;
+		 }
+		 }
+ 
+ @media screen and (min-width: 940px) {
+.nny {
+		 display: block;
+		 }
+.nyy {
+		 display: block;
+		 }
+.ynn {
+		 display: none;
+		 }
+.yyn {
+		 display: none;
+		 }
+		 }
 </style>
 <script type="text/javascript">
 /* <![CDATA[ */
@@ -658,19 +702,27 @@ document.getElementById(id).style.backgroundColor = "#ffffff";
 
 <body id="style2">
 <div class="container-full">
-  <div class="container-a">
-    <p class="floatr"><img src="images/search-box.gif" width="123" height="19" alt="" class="desktop"> <img src="images/magnify2.gif" alt="" width="48" height="16"></p>
+  <div class="container-a"><img src="images/bookmark.png" width="16" height="32" alt="" class="floatr padr12">
+    <p class="floatr"><img src="images/search-box.gif" class="nyy padr6" width="123" height="19" alt=""> <img src="images/magnify2.gif" alt="" width="48" height="16"></p>
     <p><img src="images/succeed-with-100.gif" width="171" height="100" alt=""></p>
   </div>
 </div>
 <div class="container-full black">
   <div class="container-a black">
-    <p class="mobile"><img src="images/burger.png" width="16" height="16" alt=""></p>
-    <ul class="nav">
-      <li>Courses <img src="images/arrow-down.png" width="16" height="16" alt=""></li>
-      <li><a href="#">Research</a></li>
-      <li><a href="#">Enterprise</a></li>
-      <li><a href="#">Our university</a></li>
+    <p class="yyn"><img src="images/burger.png" width="16" height="16" alt=""></p>
+    <ul class="nav nny">
+      <li>Courses<br>
+&amp; study</li>
+      <li><a href="#">Student<br>
+life</a></li>
+      <li><a href="#">International<br>
+Plymouth</a></li>
+      <li><a href="#">Research<br>
+&amp; expertise</a></li>
+      <li><a href="#">Business<br>
+&amp; partners</a></li>
+      <li><a href="#">Our<br>
+university</a></li>
     </ul>
   </div>
 </div>

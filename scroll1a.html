@@ -468,7 +468,7 @@ function goToByScroll(id){
    			$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
 				}
 				
-$(document).scroll(function() {
+$(window).scroll(function () {
 	scrollValue = $(document).scrollTop();
 	if (scrollValue > 0){
 		$(".absolutebottom").fadeOut(200);

@@ -10,26 +10,96 @@
 <title>Plymouth University</title>
 <script type="text/javascript" src="./scripts/css3-mediaqueries.js"></script>
 <style type="text/css">
+@font-face {
+	font-family: 'icon-webfont';
+	src: url('fonts/icon-webfont.eot');
+	src: url('fonts/icon-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/icon-webfont.woff') format('woff'), url('fonts/icon-webfont.ttf') format('truetype'), url('fonts/icon-webfont.svg#source-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit';
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot');
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot?#iefix') format('embedded-opentype'), url('fonts/NeuzeitforPlymouthW04-Blk.woff') format('woff'), url('fonts/NeuzeitforPlymouthW04-Blk.ttf') format('truetype'), url('fonts/NeuzeitforPlymouthW04-Blk.svg#neuzit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-light';
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-light-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-light-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-light-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-regular';
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-regular-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-regular-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-regular-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-bold';
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-bold-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-bold-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-bold-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-italic';
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-italic-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-italic-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-italic-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, form, fieldset, p, div, h2, h3, h3, h4, h5, h6 {
+	-webkit-text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1";
+	-ms-font-feature-settings: "kern" 1;
+}
 * {
 	margin: 0 auto;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'neuzeit-regular', Arial, Helvetica, sans-serif;
 	color: #000;
-	background-color: #eee;
-	font-size: medium;
-	line-height: 150%;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 24px;
 }
 h1 {
 	padding: 5px;
 	margin: 0;
 }
+h2 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 10px;
+}
+h3 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 10px;
+}
+strong {
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+a {
+	color: #08c;
+}
 p {
-	padding: 10px;
-	margin: 0;
+	padding: 0px;
+	margin: 10px;
 }
 img {
-	width: 100%;
 	border: 0;
 	text-decoration: none;
 	vertical-align: top;
@@ -41,31 +111,152 @@ img {
 	width: 960px;
 }
 .container-a {
-	background-color: #F63;
 	overflow: hidden;
 }
 .container-b {
-	background-color: #CC3;
+	background-color: #fff;
 	float: left;
 }
 .container-c {
-	background-color: #993;
+	background-color: #fff;
 	float: left;
 }
 .container-d {
-	background-color: #09C;
+	background-color: #fff;
 	float: left;
 }
 .black {
 	background-color: #000;
 	overflow: hidden;
-	width: 	100%;
+	width: 100%;
+	color: #fff;
 }
-.padimage {
-	-moz-box-sizing:    border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing:        border-box;
+.black a {
+	color: #fff;
+}
+.grey {
+	background-color: #ddd;
+	overflow: hidden;
+	width: 100%;
+	color: #000;
+}
+.white {
+	background-color: #fff;
+	overflow: hidden;
+	width: 100%;
+	color: #000;
+}
+.white a {
+	color: #08c;
+}
+.grey a {
+	color: #08c;
+}
+.tags a {
+	font-family: neuzeit-regular, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background-color: #08c;
+	text-decoration: none;
+	margin: 0 0 10px 10px;
+	padding: 5px;
+	float: left;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 12px;
+}
+.tags {
+	padding: 0;
+	margin: 0;
+}
+.cta {
+	width: 130px;
+	float: left;
+	margin: 0 0 10px 30px;
+}
+.footerlist li a {
+	padding: 10px 10px 9px 10px;
+	display: block;
+	border-bottom: 1px solid #444;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+.footerlist li a:hover {
+	text-decoration: underline;
+}
+ul.footerlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.icon {
+	font-family: 'icon-webfont', Arial, Helvetica, sans-serif;
+	display: inline;
+	float: left;
+}
+.icon:before {
+	content: attr(data-icon);
+}
+.facebook, .twitter, .google, .youtube, .instagram, .linkedin, .pinterest, .share {
+	font-size: 26px;
+	text-decoration: none;
 	padding: 10px;
+	display: inline;
+}
+.icon .facebook {
+	color: #3b5998;
+}
+.icon .twitter {
+	color: #55acee;
+}
+.icon .google {
+	color: #db4437;
+}
+.icon .youtube {
+	color: #c4302b;
+}
+.icon .instagram {
+	color: #3f729b;
+}
+.icon .linkedin {
+	color: #0e76a8;
+}
+.icon .pinterest {
+	color: #c8232c;
+}
+.icon .share {
+	color: #999;
+}
+.container-full.grey .container-a .container-c.grey h3 a .icon {
+	padding-right: 10px;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.nav li {
+	display: inline;
+	padding: 12px;
+	float: left;
+	margin-right: 24px;
+}
+.nav li, .nav li a {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+.resize {
+	width: 100%;
+}
+.floatr {
+	float: right;
 }
 
 /*
@@ -78,10 +269,8 @@ img {
 */
 		
  @media screen and (max-width: 959px) {
+
 .container-full, .container-a, .container-b, .container-c, .container-d {
-	width: 320px;
-}
-.container-full img, .container-a img, .container-b img, .container-c img, .container-d img {
 	width: 320px;
 }
 .desktop {
@@ -89,6 +278,33 @@ img {
 }
 .mobile {
 	display: block;
+}
+.container-b, .container-c, .container-d {
+	border-bottom: 1px solid #ddd;
+}
+.padimage {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 10px 0 10px;
+}
+.email {
+	width: 16px;
+	vertical-align: baseline;
+	padding-right: 5px;
+}
+p .telephone {
+	width: 12px;
+	vertical-align: baseline;
+	padding-right: 5px;
+}
+p .email {
+	width: 16px;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+.footerlist li a {
+	margin-right: 0;
 }
 }
  @media screen and (min-width: 960px) {
@@ -110,65 +326,173 @@ img {
 .mobile {
 	display: none;
 }
+p .telephone {
+	width: 12px;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+p .email {
+	width: 16px;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
 }
 </style>
 </head>
 
 <body>
+
+
+<div class="container-full">
+  <div class="container-a">
+    <p class="floatr"><img src="images/search-box2.gif" width="173" height="19" alt="" class="desktop"> <img src="images/search-box3.gif" alt="" width="50" height="19" class="mobile"></p>
+    <p><img src="images/succeed-with-100.gif" width="171" height="100" alt=""></p>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container-full black">
+  <div class="container-a black">
+    <p class="mobile"><img src="images/burger.png" alt="" class="email"></p>
+    <ul class="nav desktop">
+      <li>Courses <img src="images/arrow-down.png" width="16" height="16" alt="" class="navart"></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">Enterprise</a></li>
+      <li><a href="#">Our university</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+<div class="container-full grey">
+  <div class="container-a">
+    <div class="container-d grey">
+      <h2>Your applicant journey</h2>
+      <p>Here at Plymouth we want to make the application process as easy as possible for our future students. Joining a university is life-changing and the application process can be daunting, so we have included here everything you need to know to join us, fully prepared and ready to be a star student.</p>
+      <p><a href="#">Your journey starts here</a><br>
+      <div class="tags"> <a href="#" >Help</a> <a href="#" >Apply</a> </div>
+    </div>
+    <div class="container-d"> <a href="#"><img src="images/applicant.jpg" alt="" class="resize" /></a> </div>
+  </div>
+</div>
+<div class="container-full white">
+  <div class="container-a">
+    <div class="container-c"> <a href="#"><img src="images/strap1.gif" alt=""></a>
+      <div class="cta"><a href="#">Download a<br>
+prospectus</a></div><div class="cta"><a href="#">Upcoming<br>
+events</a></div></div>
+    <div class="container-c"> <a href="#"><img src="images/strap2.gif" alt=""></a>
+      <div class="cta"><a href="#">Visiting</a></div><div class="cta"><a href="#">International<br>
+students</a></div></div>
+    <div class="container-c"> <a href="#"><img src="images/strap3.gif" alt=""></a>
+    <div class="cta"><a href="#">Accommodation</a></div><div class="cta"><a href="#">Fees &amp; funding</a></div></div>
+  </div>
+</div>
+<!--<div class="container-full grey">
+  <div class="container-a"><a href="#"><img src="images/medicine-dentistry-1226165-main.jpg" alt="" /></a>
+    <div class="container-b white">
+      <p>Our <a href="#">Open Day</a> is a fantastic experience enabling you to view first-hand the state of the art teaching and clinical facilities that the Peninsula Schools of Medicine & Dentistry offer.<br>
+      <div class="tags"> <a href="#" >News</a> <a href="#" >Open day</a> <a href="#" >Medicine</a> <a href="#" >Dentistry</a> </div>
+    </div>
+  </div>
+</div>-->
+<div class="container-full grey">
+  <div class="container-a">
+    <div class="container-c grey"> <a href="#"><img src="images/adugna.jpg" alt="" class="padimage resize" /></a>
+      <p><a href="#">Case study - Empowering disabled children in Ethiopia</a><br>
+      
+      <div class="tags"> <a href="#" >News</a> <a href="#" >Research</a> <a href="#" >International</a> </div>
+    </div>
+    <div class="container-c"> <a href="#"><img src="images/the.gif" alt="" class="padimage resize" /></a>
+      <p><a href="#">Plymouth University is now ranked inside the top 50 global modern universities</a><br>
+      
+      <div class="tags"> <a href="#" >News</a> <a href="#" >Awards</a> <a href="#" >Times Higher Education</a> </div>
+    </div>
+    <div class="container-c"><a href="#"><img src="images/doctor.jpg" alt="" class="padimage resize" /></a>
+      <p><a href="#">Plymouth research referenced in changes to Canadian medical education policy</a><br>
+      
+      <div class="tags"> <a href="#" >News</a> <a href="#" >Research</a> <a href="#" >Medicine</a> </div>
+    </div>
+  </div>
+</div>
 <div class="container-full black">
   <div class="container-a">
-    <img src="images/herosnap.jpg" alt="" />
-    <div class="container-b">
-    <h1>A</h1>
-    <p><strong>A</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div>
-  </div>
-</div>
-<div class="container-full">
-  <div class="container-a">
-    <div class="container-c">
-      <img src="images/300x200.gif" alt="" class="padimage" />
-      <h1>C</h1>
-      <p><strong>C</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-    <div class="container-c">
-      <img src="images/300x200.gif" alt="" class="padimage" />
-      <h1>C</h1>
-      <p><strong>C</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-    <div class="container-c">
-      <img src="images/300x200.gif" alt="" class="padimage" />
-      <h1>C</h1>
-      <p><strong>C</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-  </div>
-</div>
-<div class="container-full">
-  <div class="container-a">
-    <div class="container-c">
-      <h1>C</h1>
-      <p><strong>C</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    </div>
-    <div class="container-b">
-      <img src="images/herosnap.jpg" alt="" />
+    <div class="container-b black"><img src="images/graduation3.jpg" alt="" class="resize" />
+      <h2>Graduation</h2>
+      <p><a href="#">Graduation week 2014: Monday 22 to Saturday 27 September - tickets available now</a><br>
       
+      <div class="tags"> <a href="#" >Graduation</a> <a href="#" >Tickets</a> </div>
+    </div>
+    <div class="container-c black"><a href="#"><img src="images/graduation.jpg" alt="" class="padimage resize" /></a>
+      <p><a href="#">Graduation - Step by step guide</a><br>
       
-      <h1>B</h1>
-      <p><strong>B</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <div class="tags"> <a href="#" >Help</a> <a href="#" >Graduation</a> </div>
     </div>
   </div>
 </div>
-<div class="container-full">
+
+
+<div class="container-full grey">
   <div class="container-a">
-    <div class="container-d">
-      <img src="images/herosnap.jpg" alt="" />
-      <h1>D</h1>
-      <p><strong>D</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <div class="container-c grey">
+      
+      <h2>Looking for help?</h2>
+      <h3><a href="#"><span class="icon">0</span>+44 (0)1752 600600</a></a><br>
+      <a href="#"><span class="icon padright10">Z</span>info@plymouth.ac.uk</a></h3><div class="tags"><a href="#" >Help</a></div>
+      
     </div>
-    <div class="container-d">
-      <h1>D</h1>
-      <p><strong>D</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <div class="container-b"> <a href="#"><img src="images/telephone.jpg" alt="" class="resize"/></a> </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-full black">
+  <div class="container-a">
+    <div class="container-c black">
+    
+    <ul class="footerlist">
+        <li><a href="#">Courses &amp; study</a></li>
+        <li><a href="#">Student life</a></li>
+        <li><a href="#">International Plymouth</a></li>
+        <li><a href="#">Research &amp; expertise</a></li>
+        <li><a href="#">International students</a></li>
+        <li><a href="#">Business &amp; partners</a></li>
+        <li><a href="#">Your university</a></li>
+      </ul>
+      
+    </div>
+    <div class="container-c black">
+    
+    <p><strong>Plymouth University</strong><br>
+        Drake Circus<br>
+        Plymouth<br>
+        Devon<br>
+        PL4 8AA</p>
+      <ul class="footerlist">
+        <li><a href="#"><span class="icon">0 </span>+44 (0)1752 600600</a></li>
+        <li><a href="#"><span class="icon">U </span>Map &amp; directions</a></li>
+        <li><a href="#"><span class="icon">X </span>Visit us</a></li>
+      </ul>
+        
+    </div>
+    <div class="container-c white">
+    <p class="icon"><a href="#" class="facebook">f</a><a href="#" class="twitter">t</a><a href="#" class="google">g</a><a href="#" class="youtube">y</a><a href="#" class="instagram">i</a><a href="#" class="linkedin">l</a><a href="#" class="pinterest">p</a></p>
+    
     </div>
   </div>
 </div>
+
+
+
+
 </body>
 </html>

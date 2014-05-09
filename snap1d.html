@@ -64,7 +64,6 @@ html, body, form, fieldset, p, div, h2, h3, h3, h4, h5, h6 {
 body {
 	font-family: 'neuzeit-regular', Arial, Helvetica, sans-serif;
 	color: #000;
-	background-color: #fff;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -194,6 +193,7 @@ ul.footerlist {
 	font-family: 'icon-webfont', Arial, Helvetica, sans-serif;
 	display: inline;
 	float: left;
+	margin-right: 5px;
 }
 .icon:before {
 	content: attr(data-icon);
@@ -258,6 +258,9 @@ ul.nav {
 .floatr {
 	float: right;
 }
+.clicklink:hover {
+	cursor: pointer;
+}
 
 /*
    ____               _ _                                
@@ -268,7 +271,7 @@ ul.nav {
 
 */
 		
- @media screen and (max-width: 959px) {
+ @media screen and (max-width: 640px) {
 .container-full, .container-a, .container-b, .container-c, .container-d {
 	width: 320px;
 }
@@ -306,6 +309,30 @@ p .email {
 	margin-right: 0;
 }
 }
+ @media screen and (min-width: 641px) and (max-width: 959px) {
+	 h2, h3 {
+		 font-size: 24px;
+		 line-height: 30px;
+	 }
+.container-a {
+	width: 640px;
+}
+.container-b {
+	width: 320px;
+}
+.container-c {
+	width: 320px;
+}
+.container-d {
+	width: 320px;
+}
+.desktop {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+}
  @media screen and (min-width: 960px) {
 .container-a {
 	width: 960px;
@@ -340,7 +367,7 @@ p .email {
 </head>
 
 <body>
-<div class="container-full">
+<div class="container-full white">
   <div class="container-a">
     <p class="floatr"><img src="images/search-box2.gif" width="173" height="19" alt="" class="desktop"> <img src="images/search-box3.gif" alt="" width="50" height="19" class="mobile"></p>
     <p><img src="images/succeed-with-100.gif" width="171" height="100" alt=""></p>
@@ -350,7 +377,7 @@ p .email {
   <div class="container-a black">
     <p class="mobile"><img src="images/burger.png" alt="" class="email"></p>
     <ul class="nav desktop">
-      <li>Courses <img src="images/arrow-down.png" width="16" height="16" alt="" class="navart"></li>
+      <li class="clicklink">Courses <img src="images/arrow-down.png" width="16" height="16" alt="" class="navart"></li>
       <li><a href="#">Research</a></li>
       <li><a href="#">Enterprise</a></li>
       <li><a href="#">Our university</a></li>
@@ -433,8 +460,8 @@ p .email {
   <div class="container-a">
     <div class="container-c grey">
       <h2>Looking for help?</h2>
-      <h3><a href="#"><span class="icon">0</span>+44 (0)1752 600600</a></a><br>
-        <a href="#"><span class="icon padright10">Z</span>info@plymouth.ac.uk</a></h3>
+      <h3><a href="#"><span class="icon">0</span>+44 (0)1752 600600</a><br>
+        <a href="#"><span class="icon">Z</span>info@plymouth.ac.uk</a></h3>
       <div class="tags"><a href="#" >Help</a></div>
     </div>
     <div class="container-b"> <a href="#"><img src="images/telephone.jpg" alt="" class="resize"/></a> </div>

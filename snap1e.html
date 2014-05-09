@@ -103,6 +103,10 @@ img {
 	text-decoration: none;
 	vertical-align: top;
 }
+.logo  {
+	vertical-align: baseline;
+	margin-right: 5px;
+}
 .container-b, .container-c, .container-d {
 	float: left;
 }
@@ -271,8 +275,11 @@ ul.nav {
 
 */
 		
- @media screen and (max-width: 640px) {
+ @media screen and (max-width: 639px) {
 .container-full, .container-a, .container-b, .container-c, .container-d {
+	width: 320px;
+}
+.resize {
 	width: 320px;
 }
 .desktop {
@@ -309,7 +316,7 @@ p .email {
 	margin-right: 0;
 }
 }
- @media screen and (min-width: 641px) and (max-width: 959px) {
+ @media screen and (min-width: 640px) and (max-width: 959px) {
 h2, h3 {
 	font-size: 24px;
 	line-height: 30px;
@@ -460,8 +467,8 @@ p .email {
   <div class="container-a">
     <div class="container-c grey">
       <h2>Looking for help?</h2>
-      <h3><a href="#"><span class="icon">0</span>+44 (0)1752 600600</a><br>
-        <a href="#"><span class="icon">Z</span>info@plymouth.ac.uk</a></h3>
+      <h3><a href="#"><img src="images/icon1.png" width="24" height="24" alt="" class="logo">+44 (0)1752 600600</a><br>
+        <a href="#"><img src="images/icon2.png" width="24" height="24" alt="" class="logo">info@plymouth.ac.uk</a></h3>
       <div class="tags"><a href="#" >Help</a></div>
     </div>
     <div class="container-b"> <a href="#"><img src="images/telephone.jpg" alt="" class="resize"/></a> </div>
@@ -487,14 +494,13 @@ p .email {
         Devon<br>
         PL4 8AA</p>
       <ul class="footerlist">
-        <li><a href="#"><span class="icon">0 </span>+44 (0)1752 600600</a></li>
-        <li><a href="#"><span class="icon">U </span>Map &amp; directions</a></li>
-        <li><a href="#"><span class="icon">X </span>Visit us</a></li>
+        <li><a href="#"><img src="images/icon5.png" width="16" height="16" alt="" class="logo" >+44 (0)1752 600600</a></li>
+        <li><a href="#"><img src="images/icon3.png" width="16" height="16" alt="" class="logo" >Map &amp; directions</a></li>
+        <li><a href="#"><img src="images/icon4.png" width="16" height="16" alt="" class="logo" >Visit us</a></li>
       </ul>
     </div>
     <div class="container-c white">
-      <p class="icon"><a href="#" class="facebook">f</a><a href="#" class="twitter">t</a><a href="#" class="google">g</a><a href="#" class="youtube">y</a><a href="#" class="instagram">i</a><a href="#" class="linkedin">l</a><a href="#" class="pinterest">p</a></p>
-    </div>
+    <p><a href="#"><img src="images/social.gif" width="300" alt=""></a></p></div>
   </div>
 </div>
 </body>

@@ -8,7 +8,7 @@
 <meta name = "viewport" content = "width = device-width">
 <meta name="viewport" content="initial-scale=1">
 <title>Plymouth University</title>
-<script type="text/javascript" src="./scripts/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="./scripts/respond.src.js"></script>
 <style type="text/css">
 @font-face {
 	font-family: 'icon-webfont';
@@ -103,7 +103,7 @@ img {
 	text-decoration: none;
 	vertical-align: top;
 }
-.logo  {
+.logo {
 	vertical-align: baseline;
 	margin-right: 5px;
 }
@@ -112,6 +112,7 @@ img {
 }
 .container-full {
 	width: 960px;
+	padding: 10px 0;
 }
 .container-a {
 	overflow: hidden;
@@ -129,7 +130,7 @@ img {
 	float: left;
 }
 .black {
-	background-color: #000;
+	background-color: #282828;
 	overflow: hidden;
 	width: 100%;
 	color: #fff;
@@ -138,7 +139,7 @@ img {
 	color: #fff;
 }
 .grey {
-	background-color: #ddd;
+	background-color: #f3f3f3;
 	overflow: hidden;
 	width: 100%;
 	color: #000;
@@ -265,6 +266,23 @@ ul.nav {
 .clicklink:hover {
 	cursor: pointer;
 }
+.padimage {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 10px 0 10px;
+}
+.toprepeat {
+	background-image: url(images/top-repeat.gif);
+	background-repeat: repeat-x;
+}
+.container-full {
+	border-bottom: 5px solid #5391ca;
+}
+.metnet {
+	font-size: 24px;
+	line-height: 30px;
+}
 
 /*
    ____               _ _                                
@@ -275,7 +293,7 @@ ul.nav {
 
 */
 		
- @media screen and (max-width: 639px) {
+ @media only screen and (max-width: 639px) {
 .container-full, .container-a, .container-b, .container-c, .container-d {
 	width: 320px;
 }
@@ -285,17 +303,11 @@ ul.nav {
 .desktop {
 	display: none;
 }
+.tablet {
+	display: none;
+}
 .mobile {
 	display: block;
-}
-.container-b, .container-c, .container-d {
-	border-bottom: 1px solid #ddd;
-}
-.padimage {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 10px 10px 0 10px;
 }
 .email {
 	width: 16px;
@@ -315,8 +327,15 @@ p .email {
 .footerlist li a {
 	margin-right: 0;
 }
+.toprepeat {
+	width: 320px;
 }
- @media screen and (min-width: 640px) and (max-width: 959px) {
+h2, h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+}
+ @media only screen and (min-width: 640px) and (max-width: 959px) {
 h2, h3 {
 	font-size: 24px;
 	line-height: 30px;
@@ -334,13 +353,16 @@ h2, h3 {
 	width: 320px;
 }
 .desktop {
+	display: none;
+}
+.tablet {
 	display: block;
 }
 .mobile {
 	display: none;
 }
 }
- @media screen and (min-width: 960px) {
+ @media only screen and (min-width: 960px) {
 .container-a {
 	width: 960px;
 }
@@ -355,6 +377,9 @@ h2, h3 {
 }
 .desktop {
 	display: block;
+}
+.tablet {
+	display: none;
 }
 .mobile {
 	display: none;
@@ -374,22 +399,8 @@ p .email {
 </head>
 
 <body>
-<div class="container-full black">
-  <div class="container-a black">
-    <p class="mobile"><img src="images/burger.png" alt="" class="email"></p>
-    <ul class="nav desktop">
-      <li class="clicklink">Courses <img src="images/arrow-down.png" width="16" height="16" alt="" class="navart"></li>
-      <li><a href="#">Research</a></li>
-      <li><a href="#">Enterprise</a></li>
-      <li><a href="#">Our university</a></li>
-    </ul>
-  </div>
-</div>
-<div class="container-full white">
-  <div class="container-a">
-    <p class="floatr"><img src="images/search-box2.gif" width="173" height="19" alt="" class="desktop"> <img src="images/search-box3.gif" alt="" width="50" height="19" class="mobile"></p>
-    <p><img src="images/succeed-with-100.gif" width="171" height="100" alt=""></p>
-  </div>
+<div class="toprepeat">
+  <div class="container-a"> <img src="images/top140519m2.gif" width="320" height="190" alt="" class="mobile"><img src="images/top140519t.gif" width="640" height="200" alt="" class="tablet"><img src="images/top140519d.gif" width="960" height="200" alt="" class="desktop"></div>
 </div>
 <div class="container-full grey">
   <div class="container-a">
@@ -399,7 +410,7 @@ p .email {
       <p><a href="#">Your journey starts here</a><br>
       <div class="tags"> <a href="#" >Help</a> <a href="#" >Apply</a> </div>
     </div>
-    <div class="container-d"> <a href="#"><img src="images/applicant.jpg" alt="" class="resize" /></a> </div>
+    <div class="container-d"> <a href="#"><img src="images/960x539.gif" alt="" class="resize" /></a> </div>
   </div>
 </div>
 <div class="container-full white">
@@ -430,78 +441,78 @@ p .email {
   </div>
 </div>-->
 <div class="container-full grey">
-  <div class="container-a">
-    <div class="container-c grey"> <a href="#"><img src="images/adugna.jpg" alt="" class="padimage resize" /></a>
+  <div class="container-a grey">
+    <h2>What's on</h2>
+    <div class="container-c grey"> <a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
+      <p><a href="#">Lorem ipsum dolor sit amet</a><br>
+      
+      <div class="tags"> <a href="#" >Events</a> <a href="#" >Today</a> <a href="#" >Film</a> </div>
+    </div>
+    <div class="container-c grey"> <a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
+      <p><a href="#">Consectetur adipisicing elit</a><br>
+      
+      <div class="tags"> <a href="#" >Events</a> <a href="#" >Today</a> <a href="#" >Gallery</a> </div>
+    </div>
+    <div class="container-c grey"><a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
+      <p><a href="#">Sed do eiusmod tempor incididunt</a><br>
+      
+      <div class="tags"> <a href="#" >Events</a> <a href="#" >Today</a> <a href="#" >Music</a> </div>
+    </div>
+  </div>
+</div>
+<div class="container-full white">
+  <div class="container-a white">
+    <h2>News</h2>
+    <div class="container-c"> <a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
       <p><a href="#">Case study - Empowering disabled children in Ethiopia</a><br>
       
       <div class="tags"> <a href="#" >News</a> <a href="#" >Research</a> <a href="#" >International</a> </div>
     </div>
-    <div class="container-c"> <a href="#"><img src="images/the.gif" alt="" class="padimage resize" /></a>
+    <div class="container-c"> <a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
       <p><a href="#">Plymouth University is now ranked inside the top 50 global modern universities</a><br>
       
       <div class="tags"> <a href="#" >News</a> <a href="#" >Awards</a> <a href="#" >Times Higher Education</a> </div>
     </div>
-    <div class="container-c"><a href="#"><img src="images/doctor.jpg" alt="" class="padimage resize" /></a>
+    <div class="container-c"><a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
       <p><a href="#">Plymouth research referenced in changes to Canadian medical education policy</a><br>
       
       <div class="tags"> <a href="#" >News</a> <a href="#" >Research</a> <a href="#" >Medicine</a> </div>
     </div>
   </div>
 </div>
-<div class="container-full black">
-  <div class="container-a">
-    <div class="container-b black"><img src="images/graduation3.jpg" alt="" class="resize" />
+<div class="container-full grey">
+  <div class="container-a grey">
+    <div class="container-c grey">
       <h2>Graduation</h2>
       <p><a href="#">Graduation week 2014: Monday 22 to Saturday 27 September - tickets available now</a><br>
-      
       <div class="tags"> <a href="#" >Graduation</a> <a href="#" >Tickets</a> </div>
     </div>
-    <div class="container-c black"><a href="#"><img src="images/graduation.jpg" alt="" class="padimage resize" /></a>
-      <p><a href="#">Graduation - Step by step guide</a><br>
-      
-      <div class="tags"> <a href="#" >Help</a> <a href="#" >Graduation</a> </div>
-    </div>
+    <div class="container-b grey"> <a href="#"><img src="images/960x539.gif" alt="" class="resize"/></a> </div>
   </div>
 </div>
-<div class="container-full grey">
+<div class="container-full white">
   <div class="container-a">
-    <div class="container-c grey">
+    <div class="container-c white">
       <h2>Looking for help?</h2>
       <h3><a href="#"><img src="images/icon1.png" width="24" height="24" alt="" class="logo">+44 (0)1752 600600</a><br>
         <a href="#"><img src="images/icon2.png" width="24" height="24" alt="" class="logo">info@plymouth.ac.uk</a></h3>
       <div class="tags"><a href="#" >Help</a></div>
     </div>
-    <div class="container-b"> <a href="#"><img src="images/telephone.jpg" alt="" class="resize"/></a> </div>
+    <div class="container-b"> <a href="#"><img src="images/960x539.gif" alt="" class="resize"/></a> </div>
+  </div>
+</div>
+<div class="container-full grey">
+  <div class="container-a grey">
+    <div class="container-c grey">
+      <h2 class="metnet">Weather by <img src="images/metnet.png" width="130" alt=""></h2>
+      <h2>18 &deg;C<img src="images/rain.png" alt="" width="100"/></h2>
+      <div class="tags"> <a href="#" >Weather</a></div>
+    </div>
+    <div class="container-c grey"> <a href="#"></a> </div>
   </div>
 </div>
 <div class="container-full black">
-  <div class="container-a">
-    <div class="container-c black">
-      <ul class="footerlist">
-        <li><a href="#">Courses &amp; study</a></li>
-        <li><a href="#">Student life</a></li>
-        <li><a href="#">International Plymouth</a></li>
-        <li><a href="#">Research &amp; expertise</a></li>
-        <li><a href="#">International students</a></li>
-        <li><a href="#">Business &amp; partners</a></li>
-        <li><a href="#">Your university</a></li>
-      </ul>
-    </div>
-    <div class="container-c black">
-      <p><strong>Plymouth University</strong><br>
-        Drake Circus<br>
-        Plymouth<br>
-        Devon<br>
-        PL4 8AA</p>
-      <ul class="footerlist">
-        <li><a href="#"><img src="images/icon5.png" width="16" height="16" alt="" class="logo" >+44 (0)1752 600600</a></li>
-        <li><a href="#"><img src="images/icon3.png" width="16" height="16" alt="" class="logo" >Map &amp; directions</a></li>
-        <li><a href="#"><img src="images/icon4.png" width="16" height="16" alt="" class="logo" >Visit us</a></li>
-      </ul>
-    </div>
-    <div class="container-c white">
-    <p><a href="#"><img src="images/social.gif" width="300" alt=""></a></p></div>
-  </div>
+  <div class="container-a"> <img src="images/footer140519m.gif" width="320" height="815" alt="" class="mobile "> <img src="images/footer140519t.gif" width="640" height="620" alt="" class="tablet"><img src="images/footer140519d.gif" width="960" height="315" alt="" class="desktop"></div>
 </div>
 </body>
 </html>

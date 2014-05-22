@@ -8,7 +8,7 @@
 <meta name = "viewport" content = "width = device-width">
 <meta name="viewport" content="initial-scale=1">
 <title>Plymouth University</title>
-<script type="text/javascript" src="./scripts/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="./scripts/respond.src.js"></script>
 <style type="text/css">
 @font-face {
 	font-family: 'icon-webfont';
@@ -103,7 +103,7 @@ img {
 	text-decoration: none;
 	vertical-align: top;
 }
-.logo  {
+.logo {
 	vertical-align: baseline;
 	margin-right: 5px;
 }
@@ -273,8 +273,8 @@ ul.nav {
 	padding: 10px 10px 0 10px;
 }
 .toprepeat {
-	background-image:url(images/top-repeat.gif);
-	background-repeat:repeat-x;
+	background-image: url(images/top-repeat.gif);
+	background-repeat: repeat-x;
 }
 .container-full {
 	border-bottom: 5px solid #5391ca;
@@ -293,7 +293,7 @@ ul.nav {
 
 */
 		
- @media screen and (max-width: 639px) {
+ @media only screen and (max-width: 639px) {
 .container-full, .container-a, .container-b, .container-c, .container-d {
 	width: 320px;
 }
@@ -335,7 +335,7 @@ h2, h3 {
 	line-height: 30px;
 }
 }
- @media screen and (min-width: 640px) and (max-width: 959px) {
+ @media only screen and (min-width: 640px) and (max-width: 959px) {
 h2, h3 {
 	font-size: 24px;
 	line-height: 30px;
@@ -362,7 +362,7 @@ h2, h3 {
 	display: none;
 }
 }
- @media screen and (min-width: 960px) {
+ @media only screen and (min-width: 960px) {
 .container-a {
 	width: 960px;
 }
@@ -400,14 +400,8 @@ p .email {
 
 <body>
 <div class="toprepeat">
-  <div class="container-a">
-  
-<img src="images/top140519m2.gif" width="320" height="190" alt="" class="mobile"><img src="images/top140519t.gif" width="640" height="200" alt="" class="tablet"><img src="images/top140519d.gif" width="960" height="200" alt="" class="desktop"></div></div>
-  
-
-  
-  
-
+  <div class="container-a"> <img src="images/top140522m.gif" width="320" height="260" alt="" class="mobile"><img src="images/top140522t.gif" width="640" height="200" alt="" class="tablet"><img src="images/top140522d.gif" width="960" height="200" alt="" class="desktop"></div>
+</div>
 <div class="container-full grey">
   <div class="container-a">
     <div class="container-d grey">
@@ -448,7 +442,7 @@ p .email {
 </div>-->
 <div class="container-full grey">
   <div class="container-a grey">
-  <h2>What's on</h2>
+    <h2>What's on</h2>
     <div class="container-c grey"> <a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
       <p><a href="#">Lorem ipsum dolor sit amet</a><br>
       
@@ -468,7 +462,7 @@ p .email {
 </div>
 <div class="container-full white">
   <div class="container-a white">
-  <h2>News</h2>
+    <h2>News</h2>
     <div class="container-c"> <a href="#"><img src="images/960x539.gif" alt="" class="padimage resize" /></a>
       <p><a href="#">Case study - Empowering disabled children in Ethiopia</a><br>
       
@@ -486,23 +480,16 @@ p .email {
     </div>
   </div>
 </div>
-
-
-
-
 <div class="container-full grey">
   <div class="container-a grey">
     <div class="container-c grey">
       <h2>Graduation</h2>
       <p><a href="#">Graduation week 2014: Monday 22 to Saturday 27 September - tickets available now</a><br>
-      
       <div class="tags"> <a href="#" >Graduation</a> <a href="#" >Tickets</a> </div>
     </div>
     <div class="container-b grey"> <a href="#"><img src="images/960x539.gif" alt="" class="resize"/></a> </div>
   </div>
 </div>
-
-
 <div class="container-full white">
   <div class="container-a">
     <div class="container-c white">
@@ -514,25 +501,18 @@ p .email {
     <div class="container-b"> <a href="#"><img src="images/960x539.gif" alt="" class="resize"/></a> </div>
   </div>
 </div>
-
-
 <div class="container-full grey">
   <div class="container-a grey">
     <div class="container-c grey">
       <h2 class="metnet">Weather by <img src="images/metnet.png" width="130" alt=""></h2>
       <h2>18 &deg;C<img src="images/rain.png" alt="" width="100"/></h2>
-      
       <div class="tags"> <a href="#" >Weather</a></div>
     </div>
     <div class="container-c grey"> <a href="#"></a> </div>
   </div>
 </div>
-
-
 <div class="container-full black">
-  <div class="container-a">
-  
-  
-  <img src="images/footer140519m.gif" width="320" height="815" alt="" class="mobile "> <img src="images/footer140519t.gif" width="640" height="620" alt="" class="tablet"><img src="images/footer140519d.gif" width="960" height="315" alt="" class="desktop"></div></div>
+  <div class="container-a"> <img src="images/footer140519m.gif" width="320" height="815" alt="" class="mobile "> <img src="images/footer140519t.gif" width="640" height="620" alt="" class="tablet"><img src="images/footer140519d.gif" width="960" height="315" alt="" class="desktop"></div>
+</div>
 </body>
 </html>

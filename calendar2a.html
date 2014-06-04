@@ -1,0 +1,686 @@
+<!doctype html>
+<html>
+
+<!--CODE BY JAMIE MARRIOTT-->
+
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width">
+<meta name="viewport" content="initial-scale=1">
+<title>Plymouth University</title>
+<script type="text/javascript" src="./scripts/respond.src.js"></script>
+<style type="text/css">
+@font-face {
+	font-family: 'icon-webfont';
+	src: url('fonts/icon-webfont.eot');
+	src: url('fonts/icon-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/icon-webfont.woff') format('woff'), url('fonts/icon-webfont.ttf') format('truetype'), url('fonts/icon-webfont.svg#source-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit';
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot');
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot?#iefix') format('embedded-opentype'), url('fonts/NeuzeitforPlymouthW04-Blk.woff') format('woff'), url('fonts/NeuzeitforPlymouthW04-Blk.ttf') format('truetype'), url('fonts/NeuzeitforPlymouthW04-Blk.svg#neuzit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-light';
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-light-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-light-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-light-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-regular';
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-regular-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-regular-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-regular-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-bold';
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-bold-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-bold-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-bold-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-italic';
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-italic-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-italic-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-italic-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, form, fieldset, p, div, h2, h3, h3, h4, h5, h6 {
+	-webkit-text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1";
+	-ms-font-feature-settings: "kern" 1;
+}
+* {
+	margin: 0 auto;
+}
+body {
+	font-family: 'neuzeit-regular', Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+}
+h1 {
+	padding: 5px;
+	margin: 0;
+}
+h2 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	line-height: 38px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 10px;
+}
+h3 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 10px;
+}
+.neuzeit {
+	font-family: 'neuzeit', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 10px;
+}
+strong {
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+a {
+	color: #08c;
+}
+p {
+	padding: 0px;
+	margin: 10px;
+}
+img {
+	border: 0;
+	text-decoration: none;
+	vertical-align: top;
+}
+.logo {
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+.container-b, .container-c, .container-d {
+	float: left;
+}
+.container-full {
+	width: 960px;
+	padding: 10px 0;
+}
+.container-a {
+	overflow: hidden;
+}
+.container-b {
+	background-color: #fff;
+	float: left;
+}
+.container-c {
+	background-color: #fff;
+	float: left;
+}
+.container-d {
+	background-color: #fff;
+	float: left;
+}
+.black {
+	background-color: #282828;
+	overflow: hidden;
+	width: 100%;
+	color: #fff;
+}
+.black a {
+	color: #fff;
+}
+.grey {
+	background-color: #f3f3f3;
+	overflow: hidden;
+	width: 100%;
+	color: #000;
+}
+.white {
+	background-color: #fff;
+	overflow: hidden;
+	width: 100%;
+	color: #000;
+}
+.white a {
+	color: #08c;
+}
+.grey a {
+	color: #08c;
+}
+.tags a {
+	font-family: neuzeit-regular, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background-color: #08c;
+	text-decoration: none;
+	margin: 0 0 10px 10px;
+	padding: 5px;
+	float: left;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 12px;
+}
+.tags {
+	padding: 0;
+	margin: 0;
+}
+.cta {
+	width: 130px;
+	float: left;
+	margin: 0 0 10px 30px;
+}
+.footerlist li a {
+	padding: 10px 10px 9px 10px;
+	display: block;
+	border-bottom: 1px solid #444;
+	margin-right: 20px;
+}
+ul.footerlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.icon {
+	font-family: 'icon-webfont', Arial, Helvetica, sans-serif;
+	display: inline;
+	float: left;
+	margin-right: 5px;
+}
+.icon:before {
+	content: attr(data-icon);
+}
+.facebook, .twitter, .google, .youtube, .instagram, .linkedin, .pinterest, .share {
+	font-size: 26px;
+	text-decoration: none;
+	padding: 10px;
+	display: inline;
+}
+.icon .facebook {
+	color: #3b5998;
+}
+.icon .twitter {
+	color: #55acee;
+}
+.icon .google {
+	color: #db4437;
+}
+.icon .youtube {
+	color: #c4302b;
+}
+.icon .instagram {
+	color: #3f729b;
+}
+.icon .linkedin {
+	color: #0e76a8;
+}
+.icon .pinterest {
+	color: #c8232c;
+}
+.icon .share {
+	color: #999;
+}
+.container-full.grey .container-a .container-c.grey h3 a .icon {
+	padding-right: 10px;
+}
+ul.nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.nav li {
+	display: inline;
+	padding: 12px;
+	float: left;
+	margin-right: 24px;
+}
+.nav li, .nav li a {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+.resize {
+	width: 100%;
+}
+.floatr {
+	float: right;
+}
+.clicklink:hover {
+	cursor: pointer;
+}
+.padimage {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 10px 0 10px;
+}
+.toprepeat {
+	background-image: url(images/top-repeat.gif);
+	background-repeat: repeat-x;
+}
+.container-full {
+	border-bottom: 5px solid #eee;
+}
+.metnet {
+	font-size: 24px;
+	line-height: 30px;
+}
+.padtop20 {
+	padding-top: 20px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	float: left;
+	margin: 10px;
+}
+td, th {
+	padding: 5px;
+	width: 30px;
+	text-align: center;
+}
+td {
+	height: 30px;
+}
+.previous, .next {
+	color: #aaa;
+}
+.f06 {
+	color: #08c;
+	text-decoration: none;
+	display: inline-block;
+	padding: 6px 24px;
+}
+.weekend {
+	background-color: #f3f3f3;
+}
+.weekend.next {
+	color: #aaa;
+}
+.current {
+	border: 1px solid #000;
+}
+table a {
+	color: #08c;
+	display: block;
+}
+.details tr {
+	border: 1px solid #ccc;
+}
+.details td, .details th {
+	padding: 5px;
+	width: 215px;
+	text-align: left;
+}
+.details tbody tr .weekend {
+	width: 35px;
+	text-align: center;
+}
+.footerlist li a {
+	padding: 10px 10px 9px 10px;
+	display: block;
+	border-bottom: 1px solid #ccc;
+	margin-right: 10px;
+}
+ul.footerlist {
+	margin: 0;
+	padding: 0 0 10px 0;
+	list-style-type: none;
+	background-color: #f3f3f3;
+}
+.rss {
+	vertical-align: baseline;
+	padding: 0 0 0 5px;
+}
+.ticket a {
+	font-family: neuzeit-regular, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background-color: #08c;
+	text-decoration: none;
+	margin: 0 0 10px 10px;
+	padding: 1px 5px;
+	float: right;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 24px;
+	margin: 10px;
+}
+.XXXXXXXXXXXXXXXXXXXXXXXX {;
+	padding-right: 10px;
+}
+/*
+   ____               _ _                                
+  / __ \ _ __  ___ __| (_)__ _   ___ __ _ _ ___ ___ _ _  
+ / / _` | '  \/ -_) _` | / _` | (_-</ _| '_/ -_) -_) ' \ 
+ \ \__,_|_|_|_\___\__,_|_\__,_| /__/\__|_| \___\___|_||_|
+  \____/                                                 
+
+*/
+		
+ @media only screen and (max-width: 639px) {
+.container-full, .container-a, .container-b, .container-c, .container-d {
+	width: 320px;
+}
+.resize {
+	width: 320px;
+}
+.desktop {
+	display: none;
+}
+.tablet {
+	display: none;
+}
+.mobile {
+	display: block;
+}
+.email {
+	width: 16px;
+	vertical-align: baseline;
+	padding-right: 5px;
+}
+p .telephone {
+	width: 12px;
+	vertical-align: baseline;
+	padding-right: 5px;
+}
+p .email {
+	width: 16px;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+.footerlist li a {
+	margin-right: 0;
+}
+.toprepeat {
+	width: 320px;
+}
+h2, h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+}
+ @media only screen and (min-width: 640px) and (max-width: 959px) {
+h2, h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+.container-a {
+	width: 640px;
+}
+.container-b {
+	width: 320px;
+}
+.container-c {
+	width: 320px;
+}
+.container-d {
+	width: 320px;
+}
+.desktop {
+	display: none;
+}
+.tablet {
+	display: block;
+}
+.mobile {
+	display: none;
+}
+}
+ @media only screen and (min-width: 960px) {
+.container-a {
+	width: 960px;
+}
+.container-b {
+	width: 640px;
+}
+.container-c {
+	width: 320px;
+}
+.container-d {
+	width: 480px;
+}
+.desktop {
+	display: block;
+}
+.tablet {
+	display: none;
+}
+.mobile {
+	display: none;
+}
+p .telephone {
+	width: 12px;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+p .email {
+	width: 16px;
+	vertical-align: baseline;
+	margin-right: 5px;
+}
+}
+</style>
+</head>
+
+<body>
+<div class="toprepeat">
+  <div class="container-a"> <img src="images/top140527m.gif" width="320" height="190" alt="" class="mobile"><img src="images/top140527t.gif" width="640" height="200" alt="" class="tablet"><img src="images/top140527d.gif" width="960" height="200" alt="" class="desktop"></div>
+</div>
+<div class="container-full white">
+  <div class="container-a">
+    <div class="container-b grey">
+      <h2>Events highlight</h2>
+      <img src="images/moon.jpg" alt="" class="resize">
+      <div class="ticket"><a href="#">Find tickets</a></div><h2>
+      <strong>FILM:</strong> SciScreen | Moon (2009)</h2>
+      <p><img src="images/calendar-date.png" alt="" height="50">
+      
+      </p>
+      <p>Set in a not too distant future where lone astronaut Sam Bell (Sam Rockwell) is coming to the end of a three year stint monitoring a mining operation on the Moon. With only his computer GERTY (voiced by Kevin Spacey) as company, the isolation is beginning to get to Sam.</p>
+      <p>After an encounter with a too familiar new recruit, Sam begins to question whether his employers have been entirely honest with him, or could this be case of paranoia after such a long time away from home?</p>
+      <p>Sci-Screen uses film to open discussion and explores exploration of science, where members of the scientific community introduce cult sci-fi, followed with an open debate & discussion with audience.</p>
+      <p>In association with Land/Water research group.</p>
+      <div class="tags"><a href="#" >Peninsula Arts</a> <a href="#" >Film</a> <a href="#" >September 2014</a> <a href="#" >Today's events</a></div>
+    </div>
+    <div class="container-c">
+      <table class="details">
+        <tbody>
+          <tr>
+            <td class="weekend">Date
+              <div class="day"></div></td>
+            <td>Thursday 17 September
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td class="weekend">Venue
+              <div class="day"></div></td>
+            <td><a href="#">Jill Craigie Cinema</a>
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td class="weekend">Time
+              <div class="day"></div></td>
+            <td>19:00
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td  class="weekend">Tickets
+              <div class="day"></div></td>
+            <td>£6.60, concessions £4.50
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td  class="weekend">Contact
+              <div class="day"></div></td>
+            <td>Peninsula Arts Box Office
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td class="weekend">Email
+              <div class="day"></div></td>
+            <td><a href="#">peninsula-arts@plymouth.ac.uk</a>
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td class="weekend">Phone
+              <div class="day"></div></td>
+            <td><a href="#">+441752585050</a>
+              <div class="day"></div></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>May 2014<a href="#" class="f06">&lt;</a> <a href="#" class="f06">&gt;</a></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th class="weekend">Sat</th>
+            <th class="weekend">Sun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="previous">30
+              <div class="day"></div></td>
+            <td class="previous">31
+              <div class="day"></div></td>
+            <td>1
+              <div class="day"></div></td>
+            <td>2
+              <div class="day"></div></td>
+            <td>3
+              <div class="day"></div></td>
+            <td class="weekend">4
+              <div class="day"></div></td>
+            <td class="weekend">5
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td>6
+              <div class="day"></div></td>
+            <td>7
+              <div class="day"></div></td>
+            <td><a href="#">8</a>
+              <div class="day"></div></td>
+            <td>9
+              <div class="day"></div></td>
+            <td>10
+              <div class="day"></div></td>
+            <td class="weekend">11
+              <div class="day"></div></td>
+            <td class="weekend">12
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td>13
+              <div class="day"></div></td>
+            <td>14
+              <div class="day"></div></td>
+            <td>15
+              <div class="day"></div></td>
+            <td>16
+              <div class="day"></div></td>
+            <td>17
+              <div class="day"></div></td>
+            <td class="weekend">18
+              <div class="day"></div></td>
+            <td class="weekend"><a href="#">19</a>
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td>20
+              <div class="day"></div></td>
+            <td>21
+              <div class="day"></div></td>
+            <td>22
+              <div class="day"></div></td>
+            <td>23
+              <div class="day"></div></td>
+            <td><a href="#">24</a>
+              <div class="day"></div></td>
+            <td class="weekend">25
+              <div class="day"></div></td>
+            <td class="weekend">26
+              <div class="day"></div></td>
+          </tr>
+          <tr>
+            <td>27
+              <div class="day"></div></td>
+            <td>28
+              <div class="day"></div></td>
+            <td class="current"><a href="#">29</a>
+              <div class="day"></div></td>
+            <td>30
+              <div class="day"></div></td>
+            <td>31
+              <div class="day"></div></td>
+            <td class="weekend next">1
+              <div class="day"></div></td>
+            <td class="weekend next">2
+              <div class="day"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container-full grey">
+  <div class="container-a">
+    <h2>Events guide</h2>
+    <div class="container-c">
+      <ul class="footerlist">
+        <li><a href="#">Film</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Music</a></li>
+      </ul>
+    </div>
+    <div class="container-c">
+      <ul class="footerlist">
+        <li><a href="#">Performance</a></li>
+        <li><a href="#">Talks</a></li>
+        <li><a href="#">Supporting culture</a></li>
+      </ul>
+    </div>
+    <div class="container-c">
+      <ul class="footerlist">
+        <li><a href="#">All events</a></li>
+        <li><a href="#">RSS feed<img src="images/rss.png" width="16" height="16" alt="" class="rss"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container-a">
+  <p><a href="#">Home</a> > <a href="#">University</a> > <a href="#">Events</a> > <a href="#">Peninsula Arts</a> > <a href="#">Film</a></p>
+</div>
+<div class="container-full black">
+  <div class="container-a"> <img src="images/footer140519m.gif" width="320" height="815" alt="" class="mobile "> <img src="images/footer140519t.gif" width="640" height="620" alt="" class="tablet"><img src="images/footer140519d.gif" width="960" height="315" alt="" class="desktop"></div>
+</div>
+</body>
+</html>

@@ -26,11 +26,12 @@ a {
 	color: #08c;
 }
 img {
-	border: 0;
 	text-decoration: none;
 	vertical-align: top;
 	float: left;
-	padding: 10px;
+	padding: 0px;
+	box-sizing: border-box;
+	border: 20px solid #fff;
 }
 p {
 	margin: 20px;
@@ -103,14 +104,19 @@ p {
   \____/                                                 
 
 */
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 629px) {
 .widtha, .widthb {
 	width: 320px;
 }
+img {
+	width: 100%;
 }
-@media only screen and (min-width: 620px) and (max-width: 959px) {
+@media only screen and (min-width: 640px) and (max-width: 959px) {
 .widtha, .widthb {
 	width: 620px;
+}
+img {
+	width: 50%;
 }
 }
 @media only screen and (min-width: 960px) {
@@ -119,6 +125,9 @@ p {
 }
 .widthb {
 	width: 620px;
+}
+img {
+	width: 33%;
 }
 }
 </style>
@@ -138,26 +147,26 @@ function goToByScroll(id){
     <p>Call to action text starts here</p>
   </div>
 </div>
-<div class="widtha"><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" />
+<div class="widtha"><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" />
   <div class="widthb">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
   </div>
 </div>
-<div class="widtha"><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" />
+<div class="widtha"><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" />
   <div class="widthb">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
   </div>
 </div>
 <div class="grey">
-  <div class="widtha"> <img src="images/270x180.gif" width="220" height="180" alt="" /><img src="images/270x180.gif" width="220" height="180" alt="" />
+  <div class="widtha"> <img src="images/270x180.gif"  alt="" /><img src="images/270x180.gif"  alt="" />
     <div class="widthb">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     </div>
   </div>
 </div>
-<div class="widtha"><img src="images/270x180.gif" width="220" height="180" alt="" />
+<div class="widtha"><img src="images/270x180.gif"  alt="" />
   <div class="widthb">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <a href="#">dolore eu fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>

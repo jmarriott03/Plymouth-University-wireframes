@@ -29,26 +29,50 @@ img {
 	text-decoration: none;
 	vertical-align: top;
 	float: left;
+	box-sizing: border-box;
+	border: 10px solid #fff;
+}
+.widtha {
+	overflow: hidden;
+}
+
+
+
+
+/*
+   ____               _ _                                
+  / __ \ _ __  ___ __| (_)__ _   ___ __ _ _ ___ ___ _ _  
+ / / _` | '  \/ -_) _` | / _` | (_-</ _| '_/ -_) -_) ' \ 
+ \ \__,_|_|_|_\___\__,_|_\__,_| /__/\__|_| \___\___|_||_|
+  \____/                                                 
+
+*/
+@media only screen and (max-width: 479px) {
+img {
+	width: 100%;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 959px) {
+img {
+	width: 50%;
+}
+}
+@media only screen and (min-width: 960px) {
+.widtha {
+	width: 960px;
+}
 }
 </style>
 </head>
 
 <body>
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="160" height="80" alt="" />
-<img src="images/300x200.gif" width="100%" alt="" />
-<img src="images/300x200.gif" width="50%" alt="" />
-<img src="images/300x200.gif" width="50%" alt="" />
+<div class="widtha">
 <img src="images/300x200.gif" width="33.333%" alt="" />
 <img src="images/300x200.gif" width="33.333%" alt="" />
 <img src="images/300x200.gif" width="33.333%" alt="" />
+<img src="images/300x200.gif" width="33.333%" alt="" />
+<img src="images/300x200.gif" width="33.333%" alt="" />
+<img src="images/300x200.gif" width="33.333%" alt="" />
+</div>
 </body>
 </html>

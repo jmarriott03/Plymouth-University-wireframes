@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Error404</title>
+<style type="text/css">
+.loading {
+	-webkit-animation: rotation 4s infinite linear;
+}
+ @-webkit-keyframes rotation {
+ from {
+-webkit-transform: rotate(0deg);
+}
+to {
+	-webkit-transform: rotate(359deg);
+}
+}
+.swing {
+	-webkit-animation: swinging 10s ease-in-out 0s infinite;
+	-moz-animation: swinging 10s ease-in-out 0s infinite;
+	animation: swinging 10s ease-in-out 0s infinite;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+ @-webkit-keyframes swinging {
+ 0% {
+-webkit-transform: rotate(0);
+}
+ 5% {
+-webkit-transform: rotate(10deg);
+}
+ 10% {
+-webkit-transform: rotate(-9deg);
+}
+ 15% {
+-webkit-transform: rotate(8deg);
+}
+ 20% {
+-webkit-transform: rotate(-7deg);
+}
+ 25% {
+-webkit-transform: rotate(6deg);
+}
+ 30% {
+-webkit-transform: rotate(-5deg);
+}
+ 35% {
+-webkit-transform: rotate(4deg);
+}
+ 40% {
+-webkit-transform: rotate(-3deg);
+}
+ 45% {
+-webkit-transform: rotate(2deg);
+}
+ 50% {
+-webkit-transform: rotate(0);
+}
+ 100% {
+-webkit-transform: rotate(0);
+}
+}
+ @-moz-keyframes swinging {
+ 0% {
+-moz-transform: rotate(0);
+}
+ 5% {
+-moz-transform: rotate(10deg);
+}
+ 10% {
+-moz-transform: rotate(-9deg);
+}
+ 15% {
+-moz-transform: rotate(8deg);
+}
+ 20% {
+-moz-transform: rotate(-7deg);
+}
+ 25% {
+-moz-transform: rotate(6deg);
+}
+ 30% {
+-moz-transform: rotate(-5deg);
+}
+ 35% {
+-moz-transform: rotate(4deg);
+}
+ 40% {
+-moz-transform: rotate(-3deg);
+}
+ 45% {
+-moz-transform: rotate(2deg);
+}
+ 50% {
+-moz-transform: rotate(0);
+}
+ 100% {
+-moz-transform: rotate(0);
+}
+}
+ @keyframes swinging {
+ 0% {
+transform: rotate(0);
+}
+ 5% {
+transform: rotate(10deg);
+}
+ 10% {
+transform: rotate(-9deg);
+}
+ 15% {
+transform: rotate(8deg);
+}
+ 20% {
+transform: rotate(-7deg);
+}
+ 25% {
+transform: rotate(6deg);
+}
+ 30% {
+transform: rotate(-5deg);
+}
+ 35% {
+transform: rotate(4deg);
+}
+ 40% {
+transform: rotate(-3deg);
+}
+ 45% {
+transform: rotate(2deg);
+}
+ 50% {
+transform: rotate(0);
+}
+ 100% {
+transform: rotate(0);
+}
+}
+ @-webkit-keyframes pulse {
+0% {
+background-color: #a80075;
+}
+10% {
+background-color: #c74a8d;
+}
+20% {
+background-color: #c1004a;
+}
+30% {
+background-color: #e09e33;
+}
+40% {
+background-color: #f3d213;
+}
+50% {
+background-color: #b4c960;
+}
+60% {
+background-color: #9fcac5;
+}
+70% {
+background-color: #7fbfd7;
+}
+80% {
+background-color: #5391ca;
+}
+90% {
+background-color: #7b77a5;
+}
+100% {
+background-color: #a80075;
+}
+}
+#error2 {
+	background-color: #f06;
+	-webkit-animation: pulse 10s infinite;
+	width: 320px;
+	height: 187px;
+}
+#error1 {
+	background-image: url(images/with-plym-m.gif);
+	width: 320px;
+	height: 320px;
+	background-repeat: no-repeat;
+}
+#error3 {
+	background-image: url(images/with-plym-m.gif);
+	width: 320px;
+	height: 320px;
+	background-repeat: no-repeat;
+	background-position: 0 100px;
+}
+* {
+	margin: 0 auto;
+}
+body, html {
+	height: 100%;
+}
+body {
+	max-width: 900px;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 20px;
+}
+h3 {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 10px 0;
+	margin: 0;
+}
+.absolutebottom {
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	width: 200px;
+	right: 0px;
+}
+.absolutebottom a {
+	color: #fff;
+	background-color: #08c;
+	text-decoration: none;
+	margin: 0 0 10px 10px;
+	padding: 10px;
+	float: right;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 24px;
+	margin: 10px;
+}
+form {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+.formbox {
+	overflow: hidden;
+	width: 320px;
+	font-size: 14px;
+}
+.width300 {
+	width: 235px;
+}
+</style>
+</head>
+
+<body><div class="formbox">
+<div class="form">
+<h3>Sorry, the page you requested was not found</h3>
+<h3>Find a course</h3>
+<form action="http://www5.plymouth.ac.uk/search" />
+    <input type="hidden" name="filter" value="all" />
+    <input name="q" type="text" id="search" size="42" />
+    <input type="button" name="button" value="Search" onclick="submitform()" /></div>
+  <h3>Browse subject areas</h3>
+  <form action="http://somesite.com/action" method="post">
+    <label for="action1">Undergraduate:</label>
+    <br>
+    <select name="action" class="width300" id="action1">
+      <option value="1">Accounting, banking &amp; finance</option>
+      <option value="3">Agriculture</option>
+      <option value="4">Animal Science</option>
+      <option value="74">Archaeology</option>
+      <option value="17">Architecture</option>
+      <option value="39">Art</option>
+      <option value="47">Art History</option>
+      <option value="1">Biological Sciences</option>
+      <option value="60">Biomedical Sciences</option>
+      <option value="18">Building and Construction</option>
+      <option value="32">Business</option>
+      <option value="77">Business Information Management</option>
+      <option value="5">Chemistry</option>
+      <option value="69">Children</option>
+      <option value="20">Civil, Structural and Coastal Engineering</option>
+      <option value="49">Computing and Information Technology</option>
+      <option value="63">Continuing Professional Development</option>
+      <option value="76">Crafts</option>
+      <option value="82">Criminology and Criminal Justice Studies</option>
+      <option value="6">Crop Science</option>
+      <option value="65">Dance</option>
+      <option value="88">Dentistry</option>
+      <option value="19">Design (3D, Graphic &amp; Illustration)</option>
+      <option value="46">Digital Art and Multimedia</option>
+      <option value="66">Drama</option>
+      <option value="7">Earth Sciences</option>
+      <option value="8">Ecology and Conservation</option>
+      <option value="59">Economics</option>
+      <option value="52">Educational Studies</option>
+      <option value="21">Electronic, Communication and Electrical Engineering</option>
+      <option value="42">English and Creative Writing</option>
+      <option value="84">English as a Foreign Language</option>
+      <option value="2">Environmental Sciences and Environmental Studies</option>
+      <option value="51">Fashion and Textiles</option>
+      <option value="44">Film</option>
+      <option value="40">Fine Art</option>
+      <option value="83">Food Science, Nutrition and Dietetics</option>
+      <option value="9">Geography</option>
+      <option value="10">Geology</option>
+      <option value="53">Health Professions and Therapies</option>
+      <option value="48">History</option>
+      <option value="11">Horticulture</option>
+      <option value="36">Hospitality and Catering</option>
+      <option value="61">Human Resource Management and Personnel</option>
+      <option value="33">International Business</option>
+      <option value="28">International Relations</option>
+      <option value="43">Journalism</option>
+      <option value="75">Landscape Design</option>
+      <option value="29">Law</option>
+      <option value="12">Leisure, Events &amp; Sports</option>
+      <option value="37">Management and Leadership</option>
+      <option value="13">Marine Biology</option>
+      <option value="14">Marine Studies</option>
+      <option value="35">Marketing</option>
+      <option value="24">Mathematics</option>
+      <option value="22">Mechanical, Marine and Materials Engineering</option>
+      <option value="45">Media</option>
+      <option value="73">Medical Technology</option>
+      <option value="81">Medicine</option>
+      <option value="54">Mental Health</option>
+      <option value="86">Midwifery</option>
+      <option value="34">Modern Languages</option>
+      <option value="64">Music</option>
+      <option value="50">Networks &amp; Security</option>
+      <option value="87">Neuroscience</option>
+      <option value="85">Nursing</option>
+      <option value="41">Photography</option>
+      <option value="30">Politics</option>
+      <option value="68">Post Compulsory Education and Training</option>
+      <option value="26">Psychology</option>
+      <option value="55">Public Sector Management</option>
+      <option value="56">Public Services</option>
+      <option value="78">Publishing &amp; Journalism</option>
+      <option value="72">Robotics</option>
+      <option value="15">Rural, Resource and Conservation Management</option>
+      <option value="62">Shipping and Logistics</option>
+      <option value="31">Social Policy and Administration</option>
+      <option value="57">Social Research</option>
+      <option value="58">Social Work and Community Work</option>
+      <option value="27">Sociology</option>
+      <option value="70">Sports Management</option>
+      <option value="71">Sports Science</option>
+      <option value="25">Statistics</option>
+      <option value="80">Teacher Education</option>
+      <option value="79">Teaching Assistants</option>
+      <option value="67">Theatre</option>
+      <option value="38">Tourism</option>
+      <option value="16">Zoology</option>
+    </select>
+    </select>
+    <button type="submit" name="submit" value="submit">Submit</button>
+  </form>
+  <form action="http://somesite.com/action" method="post">
+  <form action="http://somesite.com/action" method="post">
+    <label for="action1">Postgraduate:</label>
+    <br>
+    <select name="action" class="width300" id="action1">
+      <option value="1">Accounting, banking &amp; finance</option>
+      <option value="3">Agriculture</option>
+      <option value="4">Animal Science</option>
+      <option value="74">Archaeology</option>
+      <option value="17">Architecture</option>
+      <option value="39">Art</option>
+      <option value="47">Art History</option>
+      <option value="1">Biological Sciences</option>
+      <option value="60">Biomedical Sciences</option>
+      <option value="18">Building and Construction</option>
+      <option value="32">Business</option>
+      <option value="77">Business Information Management</option>
+      <option value="5">Chemistry</option>
+      <option value="69">Children</option>
+      <option value="20">Civil, Structural and Coastal Engineering</option>
+      <option value="49">Computing and Information Technology</option>
+      <option value="63">Continuing Professional Development</option>
+      <option value="76">Crafts</option>
+      <option value="82">Criminology and Criminal Justice Studies</option>
+      <option value="6">Crop Science</option>
+      <option value="65">Dance</option>
+      <option value="88">Dentistry</option>
+      <option value="19">Design (3D, Graphic &amp; Illustration)</option>
+      <option value="46">Digital Art and Multimedia</option>
+      <option value="66">Drama</option>
+      <option value="7">Earth Sciences</option>
+      <option value="8">Ecology and Conservation</option>
+      <option value="59">Economics</option>
+      <option value="52">Educational Studies</option>
+      <option value="21">Electronic, Communication and Electrical Engineering</option>
+      <option value="42">English and Creative Writing</option>
+      <option value="84">English as a Foreign Language</option>
+      <option value="2">Environmental Sciences and Environmental Studies</option>
+      <option value="51">Fashion and Textiles</option>
+      <option value="44">Film</option>
+      <option value="40">Fine Art</option>
+      <option value="83">Food Science, Nutrition and Dietetics</option>
+      <option value="9">Geography</option>
+      <option value="10">Geology</option>
+      <option value="53">Health Professions and Therapies</option>
+      <option value="48">History</option>
+      <option value="11">Horticulture</option>
+      <option value="36">Hospitality and Catering</option>
+      <option value="61">Human Resource Management and Personnel</option>
+      <option value="33">International Business</option>
+      <option value="28">International Relations</option>
+      <option value="43">Journalism</option>
+      <option value="75">Landscape Design</option>
+      <option value="29">Law</option>
+      <option value="12">Leisure, Events &amp; Sports</option>
+      <option value="37">Management and Leadership</option>
+      <option value="13">Marine Biology</option>
+      <option value="14">Marine Studies</option>
+      <option value="35">Marketing</option>
+      <option value="24">Mathematics</option>
+      <option value="22">Mechanical, Marine and Materials Engineering</option>
+      <option value="45">Media</option>
+      <option value="73">Medical Technology</option>
+      <option value="81">Medicine</option>
+      <option value="54">Mental Health</option>
+      <option value="86">Midwifery</option>
+      <option value="34">Modern Languages</option>
+      <option value="64">Music</option>
+      <option value="50">Networks &amp; Security</option>
+      <option value="87">Neuroscience</option>
+      <option value="85">Nursing</option>
+      <option value="41">Photography</option>
+      <option value="30">Politics</option>
+      <option value="68">Post Compulsory Education and Training</option>
+      <option value="26">Psychology</option>
+      <option value="55">Public Sector Management</option>
+      <option value="56">Public Services</option>
+      <option value="78">Publishing &amp; Journalism</option>
+      <option value="72">Robotics</option>
+      <option value="15">Rural, Resource and Conservation Management</option>
+      <option value="62">Shipping and Logistics</option>
+      <option value="31">Social Policy and Administration</option>
+      <option value="57">Social Research</option>
+      <option value="58">Social Work and Community Work</option>
+      <option value="27">Sociology</option>
+      <option value="70">Sports Management</option>
+      <option value="71">Sports Science</option>
+      <option value="25">Statistics</option>
+      <option value="80">Teacher Education</option>
+      <option value="79">Teaching Assistants</option>
+      <option value="67">Theatre</option>
+      <option value="38">Tourism</option>
+      <option value="16">Zoology</option>
+    </select>
+    </select>
+    <button type="submit" name="submit" value="submit">Submit</button>
+  </form>
+</div>
+<div id="error1"><img class="swing" src="images/connect-m.png" alt=""/></div>
+<div id="error2"><img src="images/error404-m.png" width="320" height="187" alt=""></div>
+<div id="error3"><img class="loading" src="images/loading-m.png" alt=""></div>
+
+
+
+
+
+
+
+
+
+
+<p class="absolutebottom"><a href="javascript:void(0)" onclick="showDiv();">Refresh wireframe</a></p>
+<script type="text/javascript">
+divs = ['error1','error2','error3'];
+
+function hideDivs() {
+for (var i=0; i<divs.length; i++)
+document.getElementById(divs[i]).style.display = 'none';
+}
+
+function showDiv() {
+hideDivs(); //hide them all before we show the next one.
+var randomDiv = divs[Math.floor(Math.random()*divs.length)];
+var div = document.getElementById(randomDiv).style.display =
+'block';
+
+}
+
+showDiv();
+</script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+
+/*Simple set up for font - replace with Neuzeit font-family*/
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	color: #333;
+}
+h2 {
+ font-size: 18px line-height: 24px;
+	color: #ccc;
+	font-weight: normal;
+}
+
+/*Checkbox styling*/
+
+.checkbox {
+	color: #333;
+	background-color: #ccc;
+	float: left;
+	padding: 12px;
+	margin: 0 12px 12px 0;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 90px;
+}
+
+/*Horizontal rule styling*/
+
+hr {
+	background-color: #ccc;
+	height: 1px;
+	border: 0;
+	clear: both;
+}
+
+/*MVP Calendar alternate rows styling*/
+
+tr:nth-child(even) {
+	background: #eee;
+}
+td {
+	padding: 10px;
+}
+
+/*Calendar styling*/
+
+.calendar {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	float: left;
+	border: 1px solid #ccc;
+}
+.calendar td, .calendar th {
+	text-align: center;
+	padding: 10px;
+	width: 20px;
+}
+.calendar tr {
+	border-bottom: 1px solid #ccc;
+}
+.weekend {
+	background-color: #ddd;
+}
+.week {
+	color: #fff;
+	background-color: #666;
+}
+.calendar tr:nth-child(even) {
+	background: #fff;
+}
+</style>
+</head>
+
+<body>
+<h2>Select buttons</h2>
+<div class='checkbox'>
+  <input type="checkbox" id="1" name="ossm">
+  <label for="1">Week 1</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="2" name="ossm">
+  <label for="2">Week 2</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="3" name="ossm">
+  <label for="3">Week 3</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="4" name="ossm">
+  <label for="4">Week 4</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="5" name="ossm">
+  <label for="5">Week 5</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="6" name="ossm">
+  <label for="6">Week 6</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="7" name="ossm">
+  <label for="7">Week 7</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="8" name="ossm">
+  <label for="8">Week 8</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="9" name="ossm">
+  <label for="9">Week 9</label>
+</div>
+<div class='checkbox'>
+  <input type="checkbox" id="10" name="ossm">
+  <label for="10">Week 99</label>
+</div>
+<hr>
+<h2>MVP calendar list</h2>
+<table>
+  <tr>
+    <td><strong>Week 1: </strong>December 29, 2014 - January 4, 2015</td>
+  </tr>
+  <tr>
+    <td><strong>Week 2: </strong>January 5, 2015 - January 11, 2015</td>
+  </tr>
+  <tr>
+    <td><strong>Week 3: </strong>January 12, 2015 - January 18, 2015</td>
+  </tr>
+  <tr>
+    <td><strong>Week 4: </strong>January 19, 2015 - January 25, 2015</td>
+  </tr>
+  <tr>
+    <td><strong>Week 5: </strong>January 26, 2015 - February 1, 2015</td>
+  </tr>
+</table>
+<hr>
+<h2>Calendar in more detail</h2>
+<table class="calendar">
+  <thead>
+    <tr>
+      <th class="week">Week</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th class="weekend">Sat</th>
+      <th class="weekend">Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="week">10</td>
+      <td class="previous">30 </td>
+      <td class="previous">31 </td>
+      <td>1 </td>
+      <td>2 </td>
+      <td>3 </td>
+      <td class="weekend">4 </td>
+      <td class="weekend">5 </td>
+    </tr>
+    <tr>
+      <td class="week">11</td>
+      <td>6 </td>
+      <td>7 </td>
+      <td>8</td>
+      <td>9 </td>
+      <td>10 </td>
+      <td class="weekend">11 </td>
+      <td class="weekend">12 </td>
+    </tr>
+    <tr>
+      <td class="week">12</td>
+      <td>13 </td>
+      <td>14 </td>
+      <td>15 </td>
+      <td>16 </td>
+      <td>17 </td>
+      <td class="weekend">18 </td>
+      <td class="weekend">19</td>
+    </tr>
+    <tr>
+      <td class="week">13</td>
+      <td>20 </td>
+      <td>21 </td>
+      <td>22 </td>
+      <td>23 </td>
+      <td>24</td>
+      <td class="weekend">25 </td>
+      <td class="weekend">26 </td>
+    </tr>
+    <tr>
+      <td class="week">14</td>
+      <td>27 </td>
+      <td>28 </td>
+      <td>29</td>
+      <td>30 </td>
+      <td>31 </td>
+      <td class="weekend next">1 </td>
+      <td class="weekend next">2 </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

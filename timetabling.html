@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name = "viewport" content = "width = device-width">
+<meta name="viewport" content="initial-scale=1">
+<title>Timetabling</title>
+<style type="text/css">
+@font-face {
+	font-family: 'neuzeit-black';
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot');
+	src: url('fonts/NeuzeitforPlymouthW04-Blk.eot?#iefix') format('embedded-opentype'), url('fonts/NeuzeitforPlymouthW04-Blk.woff') format('woff'), url('fonts/NeuzeitforPlymouthW04-Blk.ttf') format('truetype'), url('fonts/NeuzeitforPlymouthW04-Blk.svg#neuzit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-light';
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-light-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-light-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-light-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-regular';
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-regular-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-regular-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-regular-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-bold';
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-bold-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-bold-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-bold-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'neuzeit-italic';
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot');
+	src: url('fonts/neuzeitforplymouth-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/neuzeitforplymouth-italic-webfont.woff') format('woff'), url('fonts/neuzeitforplymouth-italic-webfont.ttf') format('truetype'), url('fonts/neuzeitforplymouth-italic-webfont.svg#neuzeit-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+	-webkit-text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: "kern=1";
+	-ms-font-feature-settings: "kern" 1;
+}
+* {
+	margin: 0 auto;
+}
+body {
+	font-family: 'neuzeit-regular', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333;
+	background-color: #efefef;
+}
+h1 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+}
+h2 {
+	font-family: 'neuzeit-light', Arial, Helvetica, sans-serif;
+}
+.brand {
+	font-family: 'neuzeit-black', Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 78%;
+	font-weight: normal;
+	color: #666;
+	padding: 20px 0;
+}
+.brandhighlight {
+	color: #333;
+}
+.echeckr {
+	font-family: 'neuzeit-black', Arial, Helvetica, sans-serif;
+	font-size: 100px;
+	line-height: 78%;
+	font-weight: normal;
+	color: #666;
+}
+strong {
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+em {
+	font-family: 'neuzeit-italic', Arial, Helvetica, sans-serif;
+	font-style: normal;
+}
+a {
+	color: #08c;
+	text-decoration: underline;
+}
+img {
+	border: 0;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.widtha {
+	clear: both;
+	width: 640px;
+}
+.floatr {
+	float: right;
+	font-size: 12px;
+	line-height: 24px;
+}
+.textc {
+	text-align: center;
+	padding-top: 10px;
+}
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 10px;
+	font-weight: normal;
+	clear: both;
+}
+.grey {
+	background-color: #ccc;
+	clear: both;
+	overflow: hidden;
+}
+.delete a {
+	padding: 6px;
+	background-color: #c03;
+	float: left;
+	box-shadow: 2px 2px 2px #ccc;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+.share a {
+	padding: 6px;
+	background-color: #08c;
+	float: left;
+	box-shadow: 2px 2px 2px #ccc;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	min-width: 100px;
+	margin-bottom: 10px;
+}
+/*tr:nth-child(even) {
+	background: #fff;
+}*/
+.tablestylea td {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	width: 30px;
+}
+.tablestylea {
+	border-collapse: collapse;
+	border-spacing: 0;
+	float: left;
+	border: 1px solid #ccc;
+	border-left: 1px solid #666;
+	margin: 10px 0;
+}
+.tablestylea td, .tablestylea th {
+	text-align: left;
+	padding: 10px;
+	border-right: 1px solid #666;
+}
+.tablestylea tr {
+	border-bottom: 1px solid #ccc;
+}
+.tablestylea th {
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+table {
+	clear: both;
+}
+.bbottom {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	clear: both;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.bbottomdot {
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 10px;
+	clear: both;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.padtop10 {
+	padding-top: 10px;
+}
+.pad10 {
+	padding: 10px;
+}
+#navlist li {
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	background-color: #ddd;
+	float: left;
+	margin: 0 20px 0 0;
+	font-family: 'neuzeit-bold', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+ul#navlist {
+	padding: 0;
+}
+.active {
+	background-color: #efefef !important;
+}
+.active a {
+	color: #333;
+}
+#navlist li a {
+	text-decoration: none;
+}
+.floatl {
+	float: left;
+}
+.greyt {
+	color: #999;
+}
+.margin10 {
+	margin: 10px;
+}
+</style>
+</head>
+
+<body>
+<div class="grey">
+  <div class="widtha">
+    <p class="floatr"> <strong>hparsons</strong> <span class="greyt">|</span> <a href="#">hannah.parsons@plymouth.ac.uk</a> <span class="greyt">|</span> Super user <span class="greyt">|</span> <a href="#">Logout</a></p>
+    <h1 class="brand"><span class="brandhighlight">TIMETABLING</span><br>
+      WITH<br>
+      PLYMOUTH<br>
+      UNIVERSITY</h1>
+  </div>
+</div>
+<div class="grey">
+  <div class="widtha">
+    <ul id="navlist">
+      <li class="active"><a href="#" id="current"> My modules</a></li>
+      <li><a href="#">My school</a></li>
+      <li><a href="#">Read only</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">STC's</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
+</div>
+<div class="widtha bbottom">
+  <h2>Module Overview for: ACF706 - 15/SP/SB/M</h2>
+  <p><strong>Module name:</strong> Fundamentals of Islamic Finance and Banking (IFB)</p>
+  <p><strong>Module leader:</strong> El-Masry A
+  <div class="share pad10"><a href="#">Submit to School Timetabling Coordinator for approval</a></div>
+</div>
+<div class="widtha bbottom">
+  <h2>Step 1</h2>
+  <p>Before you can create Teaching Activities you must enter the expected student numbers for this module. Please also consider whether you need to create a placeholder for a yet known member of staff.</p>
+  <p>Expected student numbers: <strong>0</strong> Number of unknown lectures: <strong>0</strong>
+  <div class="share pad10"><a href="#">Update</a></div>
+</div>
+<div class="widtha bbottom">
+  <h2>Step 2</h2>
+  <p>Consider whether any element of this module be jointly taught with another module. Only the agreed Primary Module Leader should select this option.</p>
+  <form name="form1" method="post" action="a">
+    <input name="a" type="checkbox" class="margin10" id="a">
+    I require elements of my module to be jointly taught.
+  </form>
+</div>
+<div class="widtha bbottomdot">
+  <h2>Step 3</h2>
+  <p>Teaching activities: <strong>0</strong></p>
+  <table class="tablestylea">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Activity type</th>
+        <th>Location suitability</th>
+        <th>Jointly taught</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td class="previous">Ipsum </td>
+        <td class="previous">Dolor<a href="#"></a></td>
+        <td>Sit amet<br></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="widtha">
+  <p>Secondary teaching activities: <strong>0</strong></p>
+  <table class="tablestylea">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Activity type</th>
+        <th>Location suitability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lorem</td>
+        <td class="previous">Ipsum</td>
+        <td class="previous">Dolor</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
